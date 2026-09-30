@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+
+{% block title %}
+  Athletes
+{% endblock %}
+
+{% block content %}
+  <h1>
+    Athletes list
+    <a href="{% url "club:athletes-create" %}" class="btn btn-primary link-to-page">
+      Create
+    </a>
+  </h1>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Surname</th>
+        <th>Birth date</th>
+        <th>Weight</th>
+        <th>Coaches</th>
+        <th>Gyms</th>
+        <th>Trainings</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for athlete in athlete_list %}
+        <tr>
+          <td>{{ athlete.first_name }}</td>
+          <td>{{ athlete.last_name }}</td>
+          <td>{{ athlete.birth_date }}</td>
+          <td>{{ athlete.weight }}</td>
+          <td>
+            {% for coach in athlete.coaches.all %}
+              {{ coach }}{% if not forloop.last %}, {% endif %}
+            {% empty %}
+              No coaches
+            {% endfor %}
+          </td>
+          <td>
+            {% for gym in athlete.gyms.all %}
+              {{ gym }}{% if not forloop.last %}, {% endif %}
+            {% empty %}
+              No gyms
+            {% endfor %}
+          </td>
+          <td>
+            {% for training in athlete.sessions.all %}
+              {{ training.starts_at }}{% if not forloop.last %}, {% endif %}
+            {% empty %}
+              No trainings
+            {% endfor %}
+          </td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+{% endblock %}

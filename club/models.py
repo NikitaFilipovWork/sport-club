@@ -6,12 +6,18 @@ from django.db import models
 class Coach(AbstractUser):
     pass
 
+    def __str__(self) -> str:
+        return f"{self.first_name} {self.last_name}"
+
 
 class Gym(models.Model):
     address = models.CharField(max_length=255)
     coaches = models.ManyToManyField(
         settings.AUTH_USER_MODEL, related_name="gyms"
     )
+
+    def __str__(self) -> str:
+        return f"{self.address}"
 
 
 class Athlete(models.Model):
@@ -34,8 +40,25 @@ class Athlete(models.Model):
 class TrainingSession(models.Model):
     starts_at = models.DateTimeField()
     ends_at = models.DateTimeField()
-    gym = models.ForeignKey(Gym, on_delete=models.PROTECT, related_name="sessions")
-    coach = models.ForeignKey(
-        settings.AUTH_USER_MODEL, on_delete=models.PROTECT, related_name="sessions"
+
+    gym = models.ForeignKey(
+        Gym,
+        on_delete=models.PROTECT,
+        related_name="sessions",
     )
-    athlete = models.ForeignKey(Athlete, on_delete=models.PROTECT, related_name="sessions")
+
+    coach = models.ForeignKey(
+        settings.AUTH_USER_MODEL,
+        on_delete=models.PROTECT,
+        related_name="sessions",
+    )
+
+    athlete = models.ForeignKey(
+        Athlete,
+        on_delete=models.PROTECT,
+        related_name="sessions",
+    )
+
+    def __str__(self) -> str:
+        return (f"Training starts at: {self.starts_at} and finishes at:{self.ends_at}. "
+                f"Coach is {self.coach}.")
