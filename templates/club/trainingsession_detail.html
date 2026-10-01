@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h1>{{  trainingsession.starts_at }} - {{  trainingsession.ends_at }}.
+    Coach: {{ trainingsession.coach }}</h1>
+  <ul>
+  <h2>Athletes present:</h2>
+    {% for athlete in trainingsession.athletes.all %}
+      <li>{{ athlete.first_name }}, {{ athlete.last_name }}</li>
+    {% empty %}
+      No athletes
+    {% endfor %}
+  </ul>
+{% endblock %}

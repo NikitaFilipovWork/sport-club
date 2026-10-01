@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block title %}
+  Sessions
+{% endblock %}
+
+{% block content %}
+  <h1>
+    Sessions
+  </h1>
+  <a href="{% url "club:sessions-create" %}" class="btn btn-primary link-to-page">
+      Create sessions
+  </a>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Gym</th>
+        <th>Coach</th>
+        <th>Start at</th>
+        <th>Finish at</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for session in trainingsession_list %}
+        <tr>
+          <td><a href="{% url "club:session-detail" pk=session.id %}">{{ session.id }}</a></td>
+          <td>{{ session.gym }}</td>
+          <td>{{ session.coach }}</td>
+          <td>{{ session.starts_at }}</td>
+          <td>{{ session.ends_at }}</td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+{% endblock %}

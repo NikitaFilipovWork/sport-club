@@ -54,9 +54,8 @@ class TrainingSession(models.Model):
         related_name="sessions",
     )
 
-    athlete = models.ForeignKey(
+    athletes = models.ManyToManyField(
         Athlete,
-        on_delete=models.PROTECT,
         related_name="sessions",
     )
 

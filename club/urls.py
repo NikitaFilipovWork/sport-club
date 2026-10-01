@@ -1,5 +1,4 @@
-from django.urls import path
-
+from django.urls import path, include
 
 from club.views import (
     index,
@@ -18,12 +17,15 @@ from club.views import (
     GymDeleteView,
     GymUpdateView,
     GymDetailView,
+    TrainingSessionListView,
+    TrainingSessionDetailView, TrainingSessionCreateView, TrainingSessionUpdateView, TrainingSessionDeleteView,
 )
 
 app_name = "club"
 
 urlpatterns = [
     path("", index, name="index"),
+    path('accounts/', include('django.contrib.auth.urls')),
     path("athletes/", AthleteListView.as_view(), name="athletes-list"),
     path("athletes/create/", AthleteCreateView.as_view(), name="athlete-create"),
     path("athletes/<int:pk>/detail/", AthleteDetailView.as_view(), name="athlete-detail"),
@@ -39,4 +41,9 @@ urlpatterns = [
     path("gyms/<int:pk>/detail/", GymDetailView.as_view(), name="gym-detail"),
     path("gyms/<int:pk>/update/", GymUpdateView.as_view(), name="gym-update"),
     path("gyms/<int:pk>/delete/", GymDeleteView.as_view(), name="gym-delete"),
+    path("gyms/sessions/", TrainingSessionListView.as_view(), name="sessions-list"),
+    path("gyms/sessions/create/", TrainingSessionCreateView.as_view(), name="sessions-create"),
+    path("gyms/sessions/<int:pk>/detail/", TrainingSessionDetailView.as_view(), name="session-detail"),
+    path("gyms/sessions/<int:pk>/update/", TrainingSessionUpdateView.as_view(), name="session-update"),
+    path("gyms/sessions/<int:pk>/delete/", TrainingSessionDeleteView.as_view(), name="session-delete"),
 ]
