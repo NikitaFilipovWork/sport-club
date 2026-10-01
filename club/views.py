@@ -23,3 +23,18 @@ class AthleteCreateView(generic.CreateView):
     model = Athlete
     form_class = AthleteForm
     success_url = reverse_lazy("club:athletes-list")
+
+
+class AthleteUpdateView(generic.UpdateView):
+    model = Athlete
+    form_class = AthleteForm
+    success_url = reverse_lazy("club:athletes-list")
+
+
+class AthleteDetailView(generic.DetailView):
+    model = Athlete
+
+
+class AthleteDeleteView(generic.DeleteView):
+    model = Athlete
+    success_url = reverse_lazy("club:athletes-list")

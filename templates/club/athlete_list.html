@@ -7,13 +7,14 @@
 {% block content %}
   <h1>
     Athletes list
-    <a href="{% url "club:athletes-create" %}" class="btn btn-primary link-to-page">
-      Create
-    </a>
   </h1>
+  <a href="{% url "club:athletes-create" %}" class="btn btn-primary link-to-page">
+      Create athlete
+  </a>
   <table class="table">
     <thead>
       <tr>
+        <th>ID</th>
         <th>Name</th>
         <th>Surname</th>
         <th>Birth date</th>
@@ -26,6 +27,7 @@
     <tbody>
       {% for athlete in athlete_list %}
         <tr>
+          <td><a href="{% url "club:athlete-detail" pk=athlete.id %}">{{ athlete.id }}</a></td>
           <td>{{ athlete.first_name }}</td>
           <td>{{ athlete.last_name }}</td>
           <td>{{ athlete.birth_date }}</td>

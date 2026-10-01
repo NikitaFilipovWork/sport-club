@@ -4,7 +4,7 @@ from django.db import models
 
 
 class Coach(AbstractUser):
-    pass
+    is_active = models.BooleanField(default=True)
 
     def __str__(self) -> str:
         return f"{self.first_name} {self.last_name}"
@@ -25,6 +25,7 @@ class Athlete(models.Model):
     last_name = models.CharField(max_length=255)
     birth_date = models.DateField()
     weight = models.FloatField()
+    is_active = models.BooleanField(default=True)
     coaches = models.ManyToManyField(
         settings.AUTH_USER_MODEL, related_name="athletes"
     )
