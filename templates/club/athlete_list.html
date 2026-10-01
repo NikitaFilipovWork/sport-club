@@ -6,9 +6,9 @@
 
 {% block content %}
   <h1>
-    Athletes list
+    Athletes
   </h1>
-  <a href="{% url "club:athletes-create" %}" class="btn btn-primary link-to-page">
+  <a href="{% url "club:athlete-create" %}" class="btn btn-primary link-to-page">
       Create athlete
   </a>
   <table class="table">
@@ -31,7 +31,7 @@
           <td>{{ athlete.first_name }}</td>
           <td>{{ athlete.last_name }}</td>
           <td>{{ athlete.birth_date }}</td>
-          <td>{{ athlete.weight }}</td>
+          <td>{{ athlete.weight }} kg</td>
           <td>
             {% for coach in athlete.coaches.all %}
               {{ coach }}{% if not forloop.last %}, {% endif %}

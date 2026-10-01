@@ -7,7 +7,7 @@
         <hr>
         <ul class="nav nav-pills flex-column mb-auto">
             <li class="nav-item">
-                <a href="{% url 'club:index' %}" class="nav-link active">
+                <a href="{% url "club:index" %}" class="nav-link active">
                    🏠Home
                 </a>
             </li>
@@ -17,7 +17,7 @@
                 </a>
             </li>
             <li>
-                <a href="#" class="nav-link text-white">
+                <a href="{% url "club:coaches-list" %}" class="nav-link text-white">
                     ☯️Coaches
                 </a>
             </li>
