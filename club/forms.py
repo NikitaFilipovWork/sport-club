@@ -1,23 +1,41 @@
 from django import forms
+from django.contrib.auth import get_user_model
 from django.contrib.auth.forms import UserCreationForm
 
-from club.models import Coach, Athlete, Gym, TrainingSession
+from club.models import User, Gym, TrainingSession
+from core import settings
 
 
-class AthleteForm(forms.ModelForm):
+DT_FORMAT = "%Y-%m-%dT%H:%M"
+
+
+class UserForm(UserCreationForm):
     class Meta:
-        model = Athlete
-        fields = "__all__"
+        model = User
+        fields = (
+            "username",
+            "password1",
+            "password2",
+            "first_name",
+            "last_name",
+            "email",
+            "birth_date",
+            "role",
+            "weight",
+            "coaches",
+        )
         widgets = {
             "coaches": forms.CheckboxSelectMultiple,
-            "gyms": forms.CheckboxSelectMultiple,
         }
 
 
-class CoachForm(UserCreationForm):
+class UserFormUpdate(forms.ModelForm):
     class Meta:
-        model = Coach
+        model = User
         fields = "__all__"
+        widgets = {
+            "coaches": forms.CheckboxSelectMultiple,
+        }
 
 
 class GymForm(forms.ModelForm):
@@ -35,4 +53,12 @@ class TrainingSessionForm(forms.ModelForm):
         fields = "__all__"
         widgets = {
             "athletes": forms.CheckboxSelectMultiple,
+            "starts_at": forms.DateTimeInput(
+                format=DT_FORMAT,
+                attrs={"type": "datetime-local", "class": "form-control"},
+            ),
+            "ends_at": forms.DateTimeInput(
+                format=DT_FORMAT,
+                attrs={"type": "datetime-local", "class": "form-control"},
+            ),
         }

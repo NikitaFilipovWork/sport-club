@@ -120,7 +120,7 @@ MAILERS = {
     },
 }
 
-AUTH_USER_MODEL = "club.Coach"
+AUTH_USER_MODEL = "club.User"
 
 INTERNAL_IPS = [
     "127.0.0.1",

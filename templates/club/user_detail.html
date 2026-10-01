@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h1>{{ user.first_name }} {{ user.last_name }}</h1>
+  <a href="{% url "club:athlete-update" pk=user.id %}" class="btn btn-primary">
+      Update
+  </a>
+  <a href="{% url "club:athlete-delete" pk=user.id %}" class="btn btn-danger">
+      Delete
+  </a>
+{% endblock %}

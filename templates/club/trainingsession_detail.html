@@ -1,14 +1,26 @@
 {% extends "base.html" %}
 
 {% block content %}
-  <h1>{{  trainingsession.starts_at }} - {{  trainingsession.ends_at }}.
-    Coach: {{ trainingsession.coach }}</h1>
-  <ul>
+  <h1>
+    {{ trainingsession.starts_at }} - {{ trainingsession.ends_at }}.
+    Coach: {{ trainingsession.coach }}
+  </h1>
   <h2>Athletes present:</h2>
-    {% for athlete in trainingsession.athletes.all %}
-      <li>{{ athlete.first_name }}, {{ athlete.last_name }}</li>
-    {% empty %}
-      No athletes
-    {% endfor %}
-  </ul>
+  <form method="post">
+    {% csrf_token %}
+    <ul>
+      {% for athlete in all_athletes %}
+        <li>
+          <label>
+            <input type="checkbox" name="attended" value="{{ athlete.pk }}"
+                   {% if athlete.pk in attended_ids %}checked{% endif %}>
+            {{ athlete.first_name }} {{ athlete.last_name }}
+          </label>
+        </li>
+      {% empty %}
+        <li>No athletes</li>
+      {% endfor %}
+    </ul>
+    <button type="submit" class="btn btn-primary">Save</button>
+  </form>
 {% endblock %}

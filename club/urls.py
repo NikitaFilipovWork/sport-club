@@ -18,14 +18,17 @@ from club.views import (
     GymUpdateView,
     GymDetailView,
     TrainingSessionListView,
-    TrainingSessionDetailView, TrainingSessionCreateView, TrainingSessionUpdateView, TrainingSessionDeleteView,
+    TrainingSessionDetailView,
+    TrainingSessionCreateView,
+    TrainingSessionUpdateView,
+    TrainingSessionDeleteView,
 )
 
 app_name = "club"
 
 urlpatterns = [
     path("", index, name="index"),
-    path('accounts/', include('django.contrib.auth.urls')),
+    path("accounts/", include('django.contrib.auth.urls')),
     path("athletes/", AthleteListView.as_view(), name="athletes-list"),
     path("athletes/create/", AthleteCreateView.as_view(), name="athlete-create"),
     path("athletes/<int:pk>/detail/", AthleteDetailView.as_view(), name="athlete-detail"),
