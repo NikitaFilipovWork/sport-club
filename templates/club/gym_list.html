@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block title %}
+  Gyms
+{% endblock %}
+
+{% block content %}
+  <h1>
+    Gyms
+  </h1>
+  <a href="{% url "club:gym-create" %}" class="btn btn-primary link-to-page">
+      Create gym
+  </a>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Address</th>
+        <th>Coaches</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for gym in gym_list %}
+        <tr>
+          <td><a href="{% url "club:gym-detail" pk=gym.id %}">{{ gym.id }}</a></td>
+          <td>{{ gym.address }}</td>
+          <td>
+            {% for coach in gym.coaches.all %}
+              {{ coach }}{% if not forloop.last %}, {% endif %}
+            {% empty %}
+              No coaches
+            {% endfor %}
+          </td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+{% endblock %}

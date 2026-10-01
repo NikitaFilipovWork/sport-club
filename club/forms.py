@@ -1,7 +1,7 @@
 from django import forms
 from django.contrib.auth.forms import UserCreationForm
 
-from club.models import Coach, Athlete
+from club.models import Coach, Athlete, Gym
 
 
 class AthleteForm(forms.ModelForm):
@@ -18,7 +18,12 @@ class CoachForm(UserCreationForm):
     class Meta:
         model = Coach
         fields = "__all__"
+
+
+class GymForm(forms.ModelForm):
+    class Meta:
+        model = Gym
+        fields = "__all__"
         widgets = {
-            "athletes": forms.CheckboxSelectMultiple,
-            "gyms": forms.CheckboxSelectMultiple,
+            "coaches": forms.CheckboxSelectMultiple,
         }

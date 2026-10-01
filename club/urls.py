@@ -13,6 +13,11 @@ from club.views import (
     CoachDeleteView,
     CoachUpdateView,
     CoachDetailView,
+    GymListView,
+    GymCreateView,
+    GymDeleteView,
+    GymUpdateView,
+    GymDetailView,
 )
 
 app_name = "club"
@@ -29,4 +34,9 @@ urlpatterns = [
     path("coaches/<int:pk>/detail/", CoachDetailView.as_view(), name="coach-detail"),
     path("coaches/<int:pk>/update/", CoachUpdateView.as_view(), name="coach-update"),
     path("coaches/<int:pk>/delete/", CoachDeleteView.as_view(), name="coach-delete"),
+    path("gyms/", GymListView.as_view(), name="gyms-list"),
+    path("gyms/create/", GymCreateView.as_view(), name="gym-create"),
+    path("gyms/<int:pk>/detail/", GymDetailView.as_view(), name="gym-detail"),
+    path("gyms/<int:pk>/update/", GymUpdateView.as_view(), name="gym-update"),
+    path("gyms/<int:pk>/delete/", GymDeleteView.as_view(), name="gym-delete"),
 ]

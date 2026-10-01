@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h1>{{ gym.address }}</h1>
+  <a href="{% url "club:gym-update" pk=gym.id %}" class="btn btn-primary">
+      Update
+  </a>
+  <a href="{% url "club:gym-delete" pk=gym.id %}" class="btn btn-danger">
+      Delete
+  </a>
+{% endblock %}

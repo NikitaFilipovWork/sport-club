@@ -3,8 +3,8 @@ from django.shortcuts import render
 from django.urls import reverse_lazy
 from django.views import generic
 
-from club.forms import AthleteForm, CoachForm
-from club.models import Athlete, Coach
+from club.forms import AthleteForm, CoachForm, GymForm
+from club.models import Athlete, Coach, Gym
 
 
 def index(request:HttpRequest) -> HttpResponse:
@@ -49,6 +49,12 @@ class CoachListView(generic.ListView):
     model = Coach
 
 
+class CoachCreateView(generic.CreateView):
+    model = Coach
+    form_class = CoachForm
+    success_url = reverse_lazy("club:coaches-list")
+
+
 class CoachUpdateView(generic.UpdateView):
     model = Coach
     form_class = CoachForm
@@ -59,12 +65,37 @@ class CoachDetailView(generic.DetailView):
     model = Coach
 
 
-class CoachCreateView(generic.CreateView):
-    model = Coach
-    form_class = CoachForm
-    success_url = reverse_lazy("club:coaches-list")
-
-
 class CoachDeleteView(generic.DeleteView):
     model = Coach
     success_url = reverse_lazy("club:coaches-list")
+
+
+# <---------------------------Gym-------------------------------->
+
+
+class GymListView(generic.ListView):
+    model = Gym
+
+
+class GymCreateView(generic.CreateView):
+    model = Gym
+    form_class = GymForm
+    success_url = reverse_lazy("club:gyms-list")
+
+
+class GymUpdateView(generic.UpdateView):
+    model = Gym
+    form_class = GymForm
+    success_url = reverse_lazy("club:gyms-list")
+
+
+class GymDetailView(generic.DetailView):
+    model = Gym
+
+
+class GymDeleteView(generic.DeleteView):
+    model = Gym
+    success_url = reverse_lazy("club:gyms-list")
+
+
+# <---------------------------TrainingSession-------------------------------->
