@@ -1,14 +1,52 @@
 {% extends "base.html" %}
 
-{% block title %}{{ gym.address }}{% endblock %}
+{% block title %}{{ gym.address }} · Gym{% endblock %}
 
 {% block content %}
 <div class="container-fluid px-0">
-  <div class="mb-4"><p class="page-kicker">Gym details</p><h1 class="h2 page-title mb-0">{{ gym.address }}</h1></div>
-  <div class="surface p-3 p-md-4 d-flex flex-wrap gap-2">
-    <a href="{% url 'club:gym-update' pk=gym.id %}" class="btn btn-primary">Update</a>
-    <a href="{% url 'club:gym-delete' pk=gym.id %}" class="btn btn-outline-danger">Delete</a>
+  <div class="d-flex flex-wrap justify-content-between align-items-end gap-3 mb-4">
+    <div>
+      <a href="{% url 'club:gyms-list' %}" class="small text-decoration-none">← All gyms</a>
+      <p class="page-kicker mt-3">Gym details</p>
+      <h1 class="h2 page-title mb-0">{{ gym.address }}</h1>
+    </div>
+    <div class="d-flex flex-wrap gap-2">
+      <a href="{% url 'club:gym-update' pk=gym.id %}" class="btn btn-primary">Update</a>
+      <a href="{% url 'club:gym-delete' pk=gym.id %}" class="btn btn-outline-danger">Delete</a>
+    </div>
   </div>
-</div>
 
+  <section class="row g-3">
+    <div class="col-12 col-lg-5">
+      <div class="surface h-100 overflow-hidden">
+        <div class="border-bottom px-3 px-lg-4 py-3"><h2 class="h5 fw-bold mb-0">Coaches</h2></div>
+        <div class="list-group list-group-flush">
+          {% for coach in gym.coaches.all %}
+            <a href="{% url 'club:coach-detail' pk=coach.pk %}" class="list-group-item list-group-item-action px-3 px-lg-4 py-3 text-decoration-none">
+              <span class="d-block fw-semibold">{{ coach.get_full_name|default:coach.username }}</span>
+              <span class="small text-muted">{{ coach.username }}</span>
+            </a>
+          {% empty %}
+            <div class="text-muted p-4">No coaches</div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-lg-7">
+      <div class="surface h-100 overflow-hidden">
+        <div class="border-bottom px-3 px-lg-4 py-3"><h2 class="h5 fw-bold mb-0">Training sessions</h2></div>
+        <div class="list-group list-group-flush">
+          {% for session in gym.sessions.all %}
+            <a href="{% url 'club:session-detail' pk=session.pk %}" class="list-group-item list-group-item-action px-3 px-lg-4 py-3 text-decoration-none">
+              <span class="d-block fw-semibold">{{ session.starts_at|date:"l, F j · H:i" }} – {{ session.ends_at|date:"H:i" }}</span>
+              <span class="small text-muted">Coach {{ session.coach.get_full_name|default:session.coach.username }}</span>
+            </a>
+          {% empty %}
+            <div class="text-muted p-4">No training sessions</div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
 {% endblock %}

@@ -98,6 +98,13 @@ class AthleteUpdateView(LoginRequiredMixin, generic.UpdateView):
 
 class AthleteDetailView(generic.DetailView):
     model = User
+    template_name = "club/athlete_detail.html"
+    context_object_name = "athlete"
+
+    def get_queryset(self):
+        return User.objects.filter(role=User.Role.ATHLETE).prefetch_related(
+            "coaches", "trainingsession_set__gym", "trainingsession_set__coach"
+        )
 
 
 class AthleteDeleteView(LoginRequiredMixin, generic.DeleteView):
@@ -151,6 +158,13 @@ class CoachUpdateView(LoginRequiredMixin, generic.UpdateView):
 
 class CoachDetailView(generic.DetailView):
     model = User
+    template_name = "club/coach_detail.html"
+    context_object_name = "coach"
+
+    def get_queryset(self):
+        return User.objects.filter(role=User.Role.COACH).prefetch_related(
+            "athletes", "gyms", "coached_sessions__gym"
+        )
 
 
 class CoachDeleteView(LoginRequiredMixin, generic.DeleteView):
@@ -212,6 +226,10 @@ class GymUpdateView(LoginRequiredMixin, generic.UpdateView):
 
 class GymDetailView(generic.DetailView):
     model = Gym
+    context_object_name = "gym"
+
+    def get_queryset(self):
+        return Gym.objects.prefetch_related("coaches", "sessions__coach")
 
 
 class GymDeleteView(LoginRequiredMixin, generic.DeleteView):

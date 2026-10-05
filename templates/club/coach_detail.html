@@ -1,13 +1,70 @@
 {% extends "base.html" %}
 
-{% block title %}{{ coach.first_name }} {{ coach.last_name }}{% endblock %}
+{% block title %}{{ coach.get_full_name|default:coach.username }} · Coach{% endblock %}
 
 {% block content %}
 <div class="container-fluid px-0">
-  <div class="mb-4"><p class="page-kicker">Coach details</p><h1 class="h2 page-title mb-0">{{ coach.first_name }} {{ coach.last_name }}</h1></div>
-  <div class="surface p-3 p-md-4 d-flex flex-wrap gap-2">
-    <a href="{% url 'club:coach-update' pk=coach.id %}" class="btn btn-primary">Update</a>
-    <a href="{% url 'club:coach-delete' pk=coach.id %}" class="btn btn-outline-danger">Delete</a>
+  <div class="d-flex flex-wrap justify-content-between align-items-end gap-3 mb-4">
+    <div>
+      <a href="{% url 'club:coaches-list' %}" class="small text-decoration-none">← All coaches</a>
+      <p class="page-kicker mt-3">Coach details</p>
+      <h1 class="h2 page-title mb-1">{{ coach.get_full_name|default:coach.username }}</h1>
+      <p class="page-subtitle">{{ coach.username }}</p>
+    </div>
+    <div class="d-flex flex-wrap gap-2">
+      <a href="{% url 'club:coach-update' pk=coach.id %}" class="btn btn-primary">Update</a>
+      <a href="{% url 'club:coach-delete' pk=coach.id %}" class="btn btn-outline-danger">Delete</a>
+    </div>
   </div>
+
+  <section class="row g-3 mb-4" aria-label="Coach information">
+    <div class="col-12 col-md-6"><div class="surface h-100 p-3 p-lg-4"><p class="small text-muted fw-semibold text-uppercase mb-2">Email</p><p class="fw-semibold mb-0">{{ coach.email|default:"—" }}</p></div></div>
+    <div class="col-12 col-md-6"><div class="surface h-100 p-3 p-lg-4"><p class="small text-muted fw-semibold text-uppercase mb-2">Role</p><p class="fw-semibold mb-0">{{ coach.get_role_display }}</p></div></div>
+  </section>
+
+  <section class="row g-3">
+    <div class="col-12 col-lg-4">
+      <div class="surface h-100 overflow-hidden">
+        <div class="border-bottom px-3 px-lg-4 py-3"><h2 class="h5 fw-bold mb-0">Gyms</h2></div>
+        <div class="list-group list-group-flush">
+          {% for gym in coach.gyms.all %}
+            <a href="{% url 'club:gym-detail' pk=gym.pk %}" class="list-group-item list-group-item-action px-3 px-lg-4 py-3 text-decoration-none">{{ gym.address }}</a>
+          {% empty %}
+            <div class="text-muted p-4">No gyms</div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-lg-4">
+      <div class="surface h-100 overflow-hidden">
+        <div class="border-bottom px-3 px-lg-4 py-3"><h2 class="h5 fw-bold mb-0">Athletes</h2></div>
+        <div class="list-group list-group-flush">
+          {% for athlete in coach.athletes.all %}
+            <a href="{% url 'club:athlete-detail' pk=athlete.pk %}" class="list-group-item list-group-item-action px-3 px-lg-4 py-3 text-decoration-none">
+              <span class="d-block fw-semibold">{{ athlete.get_full_name|default:athlete.username }}</span>
+              <span class="small text-muted">{{ athlete.username }}</span>
+            </a>
+          {% empty %}
+            <div class="text-muted p-4">No athletes</div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-lg-4">
+      <div class="surface h-100 overflow-hidden">
+        <div class="border-bottom px-3 px-lg-4 py-3"><h2 class="h5 fw-bold mb-0">Training sessions</h2></div>
+        <div class="list-group list-group-flush">
+          {% for session in coach.coached_sessions.all %}
+            <a href="{% url 'club:session-detail' pk=session.pk %}" class="list-group-item list-group-item-action px-3 px-lg-4 py-3 text-decoration-none">
+              <span class="d-block fw-semibold">{{ session.starts_at|date:"M j, Y · H:i" }}</span>
+              <span class="small text-muted">{{ session.gym.address }}</span>
+            </a>
+          {% empty %}
+            <div class="text-muted p-4">No training sessions</div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </section>
 </div>
 {% endblock %}
