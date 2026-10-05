@@ -4,12 +4,11 @@
 <div class="container-fluid px-0">
   <div class="surface p-4 p-md-5" style="max-width: 620px;">
     <p class="page-kicker">Delete confirmation</p>
-    <h1 class="h3 page-title mb-4">{{ athlete.first_name }} {{ athlete.last_name }}</h1>
+    <h1 class="h3 page-title mb-4">{{ gym.address }}</h1>
     <form action="" method="post">
       {% csrf_token %}
       <input type="submit" value="Yes, delete!" class="btn btn-danger">
     </form>
-    <a href="{% url "club:athletes-list" %}" class="btn btn-primary">Cancel</a>
   </div>
 </div>
 {% endblock %}

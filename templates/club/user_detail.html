@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block title %}{{ user.first_name }} {{ user.last_name }}{% endblock %}
+
+{% block content %}
+<div class="container-fluid px-0">
+  <div class="mb-4"><p class="page-kicker">User details</p><h1 class="h2 page-title mb-0">{{ user.first_name }} {{ user.last_name }}</h1></div>
+  <div class="surface p-3 p-md-4 d-flex flex-wrap gap-2">
+    <a href="{% url 'club:athlete-update' pk=user.id %}" class="btn btn-primary">Update</a>
+    <a href="{% url 'club:athlete-delete' pk=user.id %}" class="btn btn-outline-danger">Delete</a>
+  </div>
+</div>
+{% endblock %}

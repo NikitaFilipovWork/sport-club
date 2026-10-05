@@ -1,15 +1,33 @@
 {% extends "base.html" %}
 
-{% block title %}
-    Club
-{% endblock %}
+{% block title %}Club{% endblock %}
 
 {% block content %}
+<div class="container-fluid px-0">
+  <section class="surface p-4 p-md-5" style="border-top: 4px solid var(--club-yellow);">
+    <h1 class="display-6 page-title">Welcome to my club!</h1>
+    <p class="page-subtitle">This is the main page.</p>
+  </section>
 
-<h1>Welcome to my club!</h1>
-
-<p>
-    This is the main page.
-</p>
-
+  <section class="row g-3 mt-2" aria-label="Club totals">
+    <div class="col-12 col-sm-6 col-xl-4">
+      <article class="surface h-100 p-4" style="border-top: 3px solid var(--club-yellow);">
+        <p class="text-uppercase fw-semibold text-muted mb-2">Gyms</p>
+        <p class="display-5 fw-bold text-primary mb-0">{{ total_gyms }}</p>
+      </article>
+    </div>
+    <div class="col-12 col-sm-6 col-xl-4">
+      <article class="surface h-100 p-4" style="border-top: 3px solid var(--club-yellow);">
+        <p class="text-uppercase fw-semibold text-muted mb-2">Coaches</p>
+        <p class="display-5 fw-bold text-primary mb-0">{{ total_coaches }}</p>
+      </article>
+    </div>
+    <div class="col-12 col-sm-6 col-xl-4">
+      <article class="surface h-100 p-4" style="border-top: 3px solid var(--club-yellow);">
+        <p class="text-uppercase fw-semibold text-muted mb-2">Athletes</p>
+        <p class="display-5 fw-bold text-primary mb-0">{{ total_athletes }}</p>
+      </article>
+    </div>
+  </section>
+</div>
 {% endblock %}

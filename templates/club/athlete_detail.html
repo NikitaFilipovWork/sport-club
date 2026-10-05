@@ -1,11 +1,13 @@
 {% extends "base.html" %}
 
+{% block title %}{{ athlete.first_name }} {{ athlete.last_name }}{% endblock %}
+
 {% block content %}
-  <h1>{{ athlete.first_name }} {{ athlete.last_name }}</h1>
-  <a href="{% url "club:athlete-update" pk=athlete.id %}" class="btn btn-primary">
-      Update
-  </a>
-  <a href="{% url "club:athlete-delete" pk=athlete.id %}" class="btn btn-danger">
-      Delete
-  </a>
+<div class="container-fluid px-0">
+  <div class="mb-4"><p class="page-kicker">Athlete details</p><h1 class="h2 page-title mb-0">{{ athlete.first_name }} {{ athlete.last_name }}</h1></div>
+  <div class="surface p-3 p-md-4 d-flex flex-wrap gap-2">
+    <a href="{% url 'club:athlete-update' pk=athlete.id %}" class="btn btn-primary">Update</a>
+    <a href="{% url 'club:athlete-delete' pk=athlete.id %}" class="btn btn-outline-danger">Delete</a>
+  </div>
+</div>
 {% endblock %}

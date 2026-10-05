@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %}{{ gym.address }}{% endblock %}
+
+{% block content %}
+<div class="container-fluid px-0">
+  <div class="mb-4"><p class="page-kicker">Gym details</p><h1 class="h2 page-title mb-0">{{ gym.address }}</h1></div>
+  <div class="surface p-3 p-md-4 d-flex flex-wrap gap-2">
+    <a href="{% url 'club:gym-update' pk=gym.id %}" class="btn btn-primary">Update</a>
+    <a href="{% url 'club:gym-delete' pk=gym.id %}" class="btn btn-outline-danger">Delete</a>
+  </div>
+</div>
+
+{% endblock %}
