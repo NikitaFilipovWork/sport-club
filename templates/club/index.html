@@ -1,15 +1,12 @@
 {% extends "base.html" %}
 
-{% block title %}
-    Club
-{% endblock %}
+{% block title %}Club{% endblock %}
 
 {% block content %}
-
-<h1>Welcome to my club!</h1>
-
-<p>
-    This is the main page.
-</p>
-
+<div class="container-fluid px-0">
+  <section class="surface p-4 p-md-5" style="border-top: 4px solid var(--club-yellow);">
+    <h1 class="display-6 page-title">Welcome to my club!</h1>
+    <p class="page-subtitle">This is the main page.</p>
+  </section>
+</div>
 {% endblock %}

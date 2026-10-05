@@ -1,26 +1,85 @@
 {% extends "base.html" %}
 
+{% block title %}Training session · Sport Club{% endblock %}
+
 {% block content %}
-  <h1>
-    {{ trainingsession.starts_at }} - {{ trainingsession.ends_at }}.
-    Coach: {{ trainingsession.coach }}
-  </h1>
-  <h2>Athletes present:</h2>
-  <form method="post">
-    {% csrf_token %}
-    <ul>
-      {% for athlete in all_athletes %}
-        <li>
-          <label>
-            <input type="checkbox" name="attended" value="{{ athlete.pk }}"
-                   {% if athlete.pk in attended_ids %}checked{% endif %}>
-            {{ athlete.first_name }} {{ athlete.last_name }}
+<div class="container-fluid px-0">
+  <div class="d-flex flex-wrap align-items-center justify-content-between gap-3 mb-4">
+    <div>
+      <a href="{% url 'club:sessions-list' %}" class="small text-decoration-none">← All sessions</a>
+      <p class="text-uppercase text-secondary fw-semibold small mt-3 mb-1">Session details</p>
+      <h1 class="h2 fw-bold mb-1">Training session</h1>
+      <p class="text-muted mb-0">Review the schedule and record athlete attendance.</p>
+    </div>
+    <span class="badge bg-light text-primary border rounded-pill px-3 py-2">{{ trainingsession.starts_at|date:"M j, Y" }}</span>
+  </div>
+
+  <section class="row g-3 mb-4" aria-label="Session information">
+    <div class="col-12 col-md-4">
+      <div class="bg-white border rounded-3 p-3 p-lg-4 h-100">
+        <p class="text-muted small fw-semibold text-uppercase mb-2">Date &amp; time</p>
+        <p class="h5 fw-bold mb-1">{{ trainingsession.starts_at|date:"l, F j" }}</p>
+        <p class="text-muted mb-0">{{ trainingsession.starts_at|date:"H:i" }} – {{ trainingsession.ends_at|date:"H:i" }}</p>
+      </div>
+    </div>
+    <div class="col-12 col-md-4">
+      <div class="bg-white border rounded-3 p-3 p-lg-4 h-100">
+        <p class="text-muted small fw-semibold text-uppercase mb-2">Coach</p>
+        <p class="h5 fw-bold mb-1">{{ trainingsession.coach.get_full_name|default:trainingsession.coach.username }}</p>
+        <p class="text-muted mb-0">Session coach</p>
+      </div>
+    </div>
+    <div class="col-12 col-md-4">
+      <div class="bg-white border rounded-3 p-3 p-lg-4 h-100">
+        <p class="text-muted small fw-semibold text-uppercase mb-2">Training location</p>
+        <p class="h5 fw-bold mb-1">{{ trainingsession.gym.address }}</p>
+        <p class="text-muted mb-0">Club gym</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-white border rounded-3 overflow-hidden">
+    <div class="d-flex flex-wrap justify-content-between align-items-center gap-2 border-bottom px-3 px-lg-4 py-3">
+      <div>
+        <h2 class="h5 fw-bold mb-1">Athlete attendance</h2>
+        <p class="text-muted small mb-0">Select everyone who attended this session.</p>
+      </div>
+      <span class="badge bg-light text-dark border rounded-pill px-3 py-2">{{ attended_ids|length }} attended</span>
+    </div>
+
+    <form method="post">
+      {% csrf_token %}
+      <div class="list-group list-group-flush">
+        {% for athlete in all_athletes %}
+          <label class="list-group-item d-flex align-items-center gap-3 px-3 px-lg-4 py-3">
+            <input class="form-check-input mt-0" type="checkbox" name="attended" value="{{ athlete.pk }}" {% if athlete.pk in attended_ids %}checked{% endif %} {% if not can_mark_attendance %}disabled{% endif %}>
+            <span class="rounded-circle bg-light text-primary fw-bold d-inline-flex align-items-center justify-content-center flex-shrink-0" style="width: 40px; height: 40px;">
+              {{ athlete.first_name|first|default:athlete.username|first|upper }}
+            </span>
+            <span class="flex-grow-1">
+              <span class="d-block fw-semibold text-dark">{{ athlete.get_full_name|default:athlete.username }}</span>
+              <span class="d-block text-muted small">{{ athlete.username }}</span>
+            </span>
+            {% if athlete.pk in attended_ids %}
+              <span class="badge bg-light text-success border border-success">Attended</span>
+            {% endif %}
           </label>
-        </li>
-      {% empty %}
-        <li>No athletes</li>
-      {% endfor %}
-    </ul>
-    <button type="submit" class="btn btn-primary">Save</button>
-  </form>
+        {% empty %}
+          <div class="text-center text-muted py-5">
+            <p class="fw-semibold text-dark mb-1">No active athletes yet</p>
+            <p class="small mb-0">Once athletes are added to the club, you can record attendance here.</p>
+          </div>
+        {% endfor %}
+      </div>
+      <div class="d-flex flex-wrap justify-content-between align-items-center gap-2 bg-light border-top px-3 px-lg-4 py-3">
+        {% if can_mark_attendance %}
+          <span class="text-muted small">Changes are saved for this training session.</span>
+          <button type="submit" class="btn btn-primary px-4">Save attendance</button>
+        {% else %}
+          <span class="text-muted small">Only the assigned coach or a club administrator can edit attendance.</span>
+        {% endif %}
+      </div>
+    </form>
+  </section>
+</div>
 {% endblock %}

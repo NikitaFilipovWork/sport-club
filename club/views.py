@@ -1,11 +1,13 @@
 from django.contrib import messages
 from django.contrib.auth.mixins import LoginRequiredMixin
+from django.db.models import Q
 from django.http import HttpRequest, HttpResponse
 from django.shortcuts import render, redirect
 from django.urls import reverse_lazy
 from django.views import generic
 
-from club.forms import UserForm, GymForm, TrainingSessionForm, UserFormUpdate
+from club.forms import UserForm, GymForm, TrainingSessionForm, UserFormUpdate, AthleteModelSearchForm, \
+    CoachModelSearchForm
 from club.models import User, Gym, TrainingSession
 
 
@@ -19,9 +21,32 @@ def index(request:HttpRequest) -> HttpResponse:
 class AthleteListView(generic.ListView):
     model = User
     template_name = "club/athlete_list.html"
+    paginate_by = 10
 
     def get_queryset(self):
-        return User.objects.filter(role=User.Role.ATHLETE).prefetch_related("coaches")
+        queryset = User.objects.filter(role=User.Role.ATHLETE).prefetch_related(
+            "coaches", "trainingsession_set__gym"
+        )
+        last_name = self.request.GET.get("last_name")
+
+        if last_name:
+            return queryset.filter(last_name__icontains=last_name)
+
+        return queryset
+
+    def get_context_data(self, *, object_list=None, **kwargs):
+        context = super().get_context_data(
+            object_list=object_list,
+            **kwargs
+        )
+
+        last_name = self.request.GET.get("last_name", "")
+
+        context["search_form"] = AthleteModelSearchForm(
+            initial={"last_name": last_name,}
+        )
+
+        return context
 
 
 class AthleteCreateView(LoginRequiredMixin, generic.CreateView):
@@ -51,9 +76,30 @@ class AthleteDeleteView(LoginRequiredMixin, generic.DeleteView):
 class CoachListView(generic.ListView):
     model = User
     template_name = "club/coach_list.html"
+    paginate_by = 10
 
     def get_queryset(self):
-        return User.objects.filter(role=User.Role.COACH).prefetch_related("athletes")
+        queryset = User.objects.filter(role=User.Role.COACH).prefetch_related("athletes")
+        username = self.request.GET.get("username")
+
+        if username:
+            return queryset.filter(username__icontains=username)
+
+        return queryset
+
+    def get_context_data(self, *, object_list=None, **kwargs):
+        context = super().get_context_data(
+            object_list=object_list,
+            **kwargs
+        )
+
+        username = self.request.GET.get("username", "")
+
+        context["search_form"] = CoachModelSearchForm(
+            initial={"username": username,}
+        )
+
+        return context
 
 
 class CoachCreateView(LoginRequiredMixin, generic.CreateView):
@@ -72,7 +118,7 @@ class CoachDetailView(generic.DetailView):
     model = User
 
 
-class CoachDeleteView(generic.DeleteView):
+class CoachDeleteView(LoginRequiredMixin, generic.DeleteView):
     model = User
     success_url = reverse_lazy("club:coaches-list")
 
@@ -82,6 +128,7 @@ class CoachDeleteView(generic.DeleteView):
 
 class GymListView(generic.ListView):
     model = Gym
+    paginate_by = 10
 
 
 class GymCreateView(LoginRequiredMixin, generic.CreateView):
@@ -110,6 +157,7 @@ class GymDeleteView(LoginRequiredMixin, generic.DeleteView):
 
 class TrainingSessionListView(generic.ListView):
     model = TrainingSession
+    paginate_by = 10
 
 
 class TrainingSessionDetailView(generic.DetailView):
@@ -121,6 +169,10 @@ class TrainingSessionDetailView(generic.DetailView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
+        context["can_mark_attendance"] = (
+            self.request.user.is_authenticated
+            and (self.request.user == self.object.coach or self.request.user.is_staff)
+        )
         context["all_athletes"] = User.objects.filter(
             role=User.Role.ATHLETE, is_active=True
         )
@@ -136,7 +188,7 @@ class TrainingSessionDetailView(generic.DetailView):
             request.user.is_authenticated
             and (request.user == session.coach or request.user.is_staff)
         ):
-            messages.error(request, "Нет прав отмечать посещаемость.")
+            messages.error(request, "You have not enough rights(")
             return redirect(request.path)
 
         ids = [int(v) for v in request.POST.getlist("attended") if v.isdigit()]
@@ -144,7 +196,7 @@ class TrainingSessionDetailView(generic.DetailView):
 
         session.athletes.set(athletes)
 
-        messages.success(request, "Посещаемость сохранена.")
+        messages.success(request, "Saved")
         return redirect(request.path)
 
 
@@ -163,3 +215,9 @@ class TrainingSessionUpdateView(LoginRequiredMixin, generic.UpdateView):
 class TrainingSessionDeleteView(LoginRequiredMixin, generic.DeleteView):
     model = TrainingSession
     success_url = reverse_lazy("club:sessions-list")
+
+
+class SignUpView(generic.CreateView):
+    form_class = UserForm
+    success_url = reverse_lazy("club:login")
+    template_name = "registration/signup.html"

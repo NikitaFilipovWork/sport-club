@@ -21,7 +21,7 @@ from club.views import (
     TrainingSessionDetailView,
     TrainingSessionCreateView,
     TrainingSessionUpdateView,
-    TrainingSessionDeleteView,
+    TrainingSessionDeleteView, SignUpView,
 )
 
 app_name = "club"
@@ -29,6 +29,7 @@ app_name = "club"
 urlpatterns = [
     path("", index, name="index"),
     path("accounts/", include('django.contrib.auth.urls')),
+    path("signup/", SignUpView.as_view(), name="signup"),
     path("athletes/", AthleteListView.as_view(), name="athletes-list"),
     path("athletes/create/", AthleteCreateView.as_view(), name="athlete-create"),
     path("athletes/<int:pk>/detail/", AthleteDetailView.as_view(), name="athlete-detail"),

@@ -1,62 +1,95 @@
 {% extends "base.html" %}
+{% load crispy_forms_filters %}
 
-{% block title %}
-  Athlete
-{% endblock %}
+{% block title %}Athletes{% endblock %}
 
 {% block content %}
-  <h1>
-    Athlete
-  </h1>
-  <a href="{% url "club:athlete-create" %}" class="btn btn-primary link-to-page">
-    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-add" viewBox="0 0 16 16">
-      <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m.5-5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 1 0m-2-6a3 3 0 1 1-6 0 3 3 0 0 1 6 0M8 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4"></path>
-      <path d="M8.256 14a4.5 4.5 0 0 1-.229-1.004H3c.001-.246.154-.986.832-1.664C4.484 10.68 5.711 10 8 10q.39 0 .74.025c.226-.341.496-.65.804-.918Q8.844 9.002 8 9c-5 0-6 3-6 4s1 1 1 1z"></path>
-    </svg></a>
-  <table class="table">
-    <thead>
-      <tr>
-        <th>ID</th>
-        <th>Name</th>
-        <th>Surname</th>
-        <th>Birth date</th>
-        <th>Weight</th>
-        <th>Coaches</th>
-        <th>Gyms</th>
-        <th>Trainings</th>
-      </tr>
-    </thead>
-    <tbody>
-      {% for user in user_list %}
-        <tr>
-          <td><a href="{% url "club:athlete-detail" pk=user.id %}">{{ user.id }}</a></td>
-          <td>{{ user.first_name }}</td>
-          <td>{{ user.last_name }}</td>
-          <td>{{ user.birth_date }}</td>
-          <td>{{ user.weight }} kg</td>
-          <td>
-            {% for coach in user.coaches.all %}
-              {{ coach }}{% if not forloop.last %}, {% endif %}
-            {% empty %}
-              No coaches
-            {% endfor %}
-          </td>
-          <td>
-            {% for gym in user.gyms.all %}
-              {{ gym }}{% if not forloop.last %}, {% endif %}
-            {% empty %}
-              No gyms
-            {% endfor %}
-          </td>
-          <td>
-            {% for training in user.sessions.all %}
-              {{ training.starts_at }}{% if not forloop.last %}, {% endif %}
-            {% empty %}
-              No trainings
-            {% endfor %}
-          </td>
-        </tr>
-      {% endfor %}
-    </tbody>
-  </table>
+<div class="container-fluid px-0">
+  <div class="d-flex flex-wrap align-items-center justify-content-between gap-3 mb-4">
+    <div>
+      <p class="text-uppercase text-secondary fw-semibold small mb-1">Club directory</p>
+      <h1 class="h2 fw-bold mb-1">Athletes</h1>
+      <p class="text-muted mb-0">Browse athlete profiles</p>
+    </div>
+    <a href="{% url 'club:athlete-create' %}" class="btn btn-primary d-inline-flex align-items-center gap-2 px-3 py-2">
+      <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true">
+        <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m.5-5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 1 0M8 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4"></path>
+        <path d="M8.256 14a4.5 4.5 0 0 1-.229-1.004H3c0-.246.154-.986.832-1.664C4.484 10.68 5.711 10 8 10q.39 0 .74.025c.226-.341.496-.65.804-.918Q8.844 9.002 8 9c-5 0-6 3-6 4s1 1 1 1z"></path>
+      </svg>
+      Create athlete
+    </a>
+  </div>
+
+  <form action="" method="get" class="bg-light border rounded-3 p-3 p-md-4 mb-4">
+    <div class="row align-items-end g-3">
+      <div class="col-12 col-md-8 col-lg-9">
+        {{ search_form|crispy }}
+      </div>
+      <div>
+        <button type="submit" class="btn btn-outline-primary flex-grow-1">Search</button>
+        {% if request.GET.last_name %}
+          <a href="{% url "club:athletes-list" %}" class="btn btn-outline-secondary">Clear</a>
+        {% endif %}
+      </div>
+    </div>
+  </form>
+
+  <div class="bg-white border rounded-3 overflow-hidden">
+    <div class="table-responsive">
+      <table class="table table-hover align-middle mb-0">
+        <thead class="table-light">
+          <tr>
+            <th scope="col" class="ps-3">#</th>
+            <th scope="col">Athlete</th>
+            <th scope="col">Birth date</th>
+            <th scope="col">Weight</th>
+            <th scope="col">Coaches</th>
+            <th scope="col">Training sessions</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for user in user_list %}
+            <tr>
+              <td class="ps-3 text-muted">{{ user.id }}</td>
+              <td>
+                <a href="{% url "club:athlete-detail" pk=user.id %}" class="fw-semibold text-decoration-none">
+                  {{ user.get_full_name|default:user.username }}
+                </a>
+              </td>
+              <td>{{ user.birth_date|date:"M j, Y"|default:"—" }}</td>
+              <td>{% if user.weight %}{{ user.weight }} kg{% else %}—{% endif %}</td>
+              <td>
+                {% for coach in user.coaches.all %}
+                  <span class="badge bg-light text-dark border fw-normal mb-1">{{ coach }}</span>
+                {% empty %}
+                  <span class="text-muted">No coaches</span>
+                {% endfor %}
+              </td>
+              <td>
+                {% for training in user.trainingsession_set.all %}
+                  <div class="small mb-1">
+                    <a href="{% url "club:session-detail" pk=training.pk %}" class="text-decoration-none">{{ training.starts_at|date:"M j, H:i" }}</a>
+                    <span class="text-muted">· {{ training.gym.address }}</span>
+                  </div>
+                {% empty %}
+                  <span class="text-muted">No sessions</span>
+                {% endfor %}
+              </td>
+            </tr>
+          {% empty %}
+            <tr>
+              <td colspan="6" class="text-center text-muted py-5">
+                {% if request.GET.last_name %}
+                  No athletes match “{{ request.GET.last_name }}”. Try another name.
+                {% else %}
+                  No athletes have been added yet.
+                {% endif %}
+              </td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
 {% endblock %}

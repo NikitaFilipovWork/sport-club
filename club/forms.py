@@ -2,6 +2,7 @@ from django import forms
 from django.contrib.auth import get_user_model
 from django.contrib.auth.forms import UserCreationForm
 
+
 from club.models import User, Gym, TrainingSession
 from core import settings
 
@@ -32,7 +33,17 @@ class UserForm(UserCreationForm):
 class UserFormUpdate(forms.ModelForm):
     class Meta:
         model = User
-        fields = "__all__"
+        fields = (
+            "username",
+            "first_name",
+            "password",
+            "last_name",
+            "email",
+            "birth_date",
+            "role",
+            "weight",
+            "coaches",
+        )
         widgets = {
             "coaches": forms.CheckboxSelectMultiple,
         }
@@ -62,3 +73,11 @@ class TrainingSessionForm(forms.ModelForm):
                 attrs={"type": "datetime-local", "class": "form-control"},
             ),
         }
+
+
+class AthleteModelSearchForm(forms.Form):
+    last_name = forms.CharField(max_length=255, required=False)
+
+
+class CoachModelSearchForm(forms.Form):
+    username = forms.CharField(max_length=255, required=False)

@@ -1,38 +1,35 @@
 {% extends "base.html" %}
+{% load crispy_forms_filters %}
 
-{% block title %}
-  Gyms
-{% endblock %}
+{% block title %}Gyms{% endblock %}
 
 {% block content %}
-  <h1>
-    Gyms
-  </h1>
-  <a href="{% url "club:gym-create" %}" class="btn btn-primary link-to-page">
-      Create gym
-  </a>
-  <table class="table">
-    <thead>
-      <tr>
-        <th>ID</th>
-        <th>Address</th>
-        <th>Coaches</th>
-      </tr>
-    </thead>
-    <tbody>
-      {% for gym in gym_list %}
-        <tr>
-          <td><a href="{% url "club:gym-detail" pk=gym.id %}">{{ gym.id }}</a></td>
-          <td>{{ gym.address }}</td>
-          <td>
-            {% for coach in gym.coaches.all %}
-              {{ coach }}{% if not forloop.last %}, {% endif %}
-            {% empty %}
-              No coaches
-            {% endfor %}
-          </td>
-        </tr>
-      {% endfor %}
-    </tbody>
-  </table>
+<div class="container-fluid px-0">
+  <div class="d-flex flex-wrap justify-content-between align-items-center gap-3 mb-4">
+    <div><p class="page-kicker">Club directory</p><h1 class="h2 page-title mb-1">Gyms</h1></div>
+    <a href="{% url 'club:gym-create' %}" class="btn btn-primary px-3 py-2">Create gym</a>
+  </div>
+  <form action="" method="get" class="surface-muted p-3 p-md-4 mb-4">
+    <div class="row align-items-end g-3">
+      <div class="col-12 col-md-8">{{ search_form|crispy }}</div>
+      <div class="col-12 col-md-4"><input type="submit" value="Search" class="btn btn-primary w-100"></div>
+    </div>
+  </form>
+  <div class="surface overflow-hidden">
+    <div class="table-responsive">
+      <table class="table table-hover align-middle mb-0">
+        <thead class="table-light"><tr><th class="ps-3">ID</th><th>Address</th><th>Coaches</th></tr></thead>
+        <tbody>
+          {% for gym in gym_list %}
+            <tr>
+              <td class="ps-3"><a href="{% url 'club:gym-detail' pk=gym.id %}" class="text-decoration-none fw-semibold">{{ gym.id }}</a></td>
+              <td>{{ gym.address }}</td>
+              <td>{% for coach in gym.coaches.all %}{{ coach }}{% if not forloop.last %}, {% endif %}{% empty %}<span class="text-muted">No coaches</span>{% endfor %}</td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
 {% endblock %}
