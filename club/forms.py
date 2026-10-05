@@ -81,3 +81,7 @@ class AthleteModelSearchForm(forms.Form):
 
 class CoachModelSearchForm(forms.Form):
     username = forms.CharField(max_length=255, required=False)
+
+
+class GymModelSearchForm(forms.Form):
+    address = forms.CharField(max_length=255, required=False)

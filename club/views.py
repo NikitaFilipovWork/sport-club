@@ -1,3 +1,5 @@
+from typing import Any
+
 from django.contrib import messages
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.db.models import Q
@@ -7,13 +9,21 @@ from django.urls import reverse_lazy
 from django.views import generic
 
 from club.forms import UserForm, GymForm, TrainingSessionForm, UserFormUpdate, AthleteModelSearchForm, \
-    CoachModelSearchForm
+    CoachModelSearchForm, GymModelSearchForm
 from club.models import User, Gym, TrainingSession
 
 
 def index(request:HttpRequest) -> HttpResponse:
+    total_coaches = User.objects.filter(role=User.Role.COACH).count()
+    total_athletes = User.objects.filter(role=User.Role.ATHLETE).count()
+    total_gyms = Gym.objects.all().count()
+    context = {
+        "total_coaches": total_coaches,
+        "total_athletes": total_athletes,
+        "total_gyms": total_gyms,
+    }
 
-    return render(request, template_name="club/index.html")
+    return render(request, template_name="club/index.html", context=context)
 
 
 # <---------------------------Athlete-------------------------------->
@@ -53,6 +63,31 @@ class AthleteCreateView(LoginRequiredMixin, generic.CreateView):
     model = User
     form_class = UserForm
     success_url = reverse_lazy("club:athletes-list")
+
+    def get_context_data(self, **kwargs: Any) -> dict[str, Any]:
+        context = super().get_context_data(**kwargs)
+        context["can_create_athlete"] = (
+                self.request.user.is_authenticated
+                and (self.request.user == self.object.coach or self.request.user.is_staff)
+        )
+
+        return context
+
+    def post(self, request, *args, **kwargs):
+        session = self.get_object()
+
+        if not (
+                request.user.is_authenticated
+                and (request.user == session.coach or request.user.is_staff)
+        ):
+            messages.error(request, "You have not enough rights(")
+            return redirect(request.path)
+
+
+
+        messages.success(request, "Saved")
+        return redirect(request.path)
+
 
 
 class AthleteUpdateView(LoginRequiredMixin, generic.UpdateView):
@@ -130,6 +165,29 @@ class GymListView(generic.ListView):
     model = Gym
     paginate_by = 10
 
+    def get_queryset(self):
+        queryset = Gym.objects.prefetch_related("coaches")
+        address = self.request.GET.get("address")
+
+        if address:
+            return queryset.filter(address__icontains=address)
+
+        return queryset
+
+    def get_context_data(self, *, object_list=None, **kwargs):
+        context = super().get_context_data(
+            object_list=object_list,
+            **kwargs
+        )
+
+        address = self.request.GET.get("address", "")
+
+        context["search_form"] = GymModelSearchForm(
+            initial={"address": address, }
+        )
+
+        return context
+
 
 class GymCreateView(LoginRequiredMixin, generic.CreateView):
     model = Gym
@@ -141,6 +199,15 @@ class GymUpdateView(LoginRequiredMixin, generic.UpdateView):
     model = Gym
     form_class = GymForm
     success_url = reverse_lazy("club:gyms-list")
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context["can_update_gym"] = (
+            self.request.user.is_authenticated
+            and (self.request.user == self.object.coach or self.request.user.is_staff)
+        )
+
+        return context
 
 
 class GymDetailView(generic.DetailView):

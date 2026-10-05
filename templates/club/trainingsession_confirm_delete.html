@@ -9,6 +9,7 @@
       {% csrf_token %}
       <input type="submit" value="Yes, delete!" class="btn btn-danger">
     </form>
+    <a href="{% url "club:sessions-list" %}" class="btn btn-primary">Cancel</a>
   </div>
 </div>
 {% endblock %}
