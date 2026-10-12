@@ -1,0 +1,3546 @@
+[
+  {
+    "model": "club.user",
+    "pk": 2,
+    "fields": {
+      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "ivan.petrenko",
+      "first_name": "Ivan",
+      "last_name": "Petrenko",
+      "email": "ivan.petrenko@club.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-09-01T09:00:00Z",
+      "role": "coach",
+      "birth_date": "1976-07-23",
+      "weight": 88.9,
+      "coaches": [],
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "club.user",
+    "pk": 3,
+    "fields": {
+      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "olena.shevchenko",
+      "first_name": "Olena",
+      "last_name": "Shevchenko",
+      "email": "olena.shevchenko@club.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-09-01T09:00:00Z",
+      "role": "coach",
+      "birth_date": "1981-06-29",
+      "weight": 64.9,
+      "coaches": [],
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "club.user",
+    "pk": 4,
+    "fields": {
+      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "taras.kravchenko",
+      "first_name": "Taras",
+      "last_name": "Kravchenko",
+      "email": "taras.kravchenko@club.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-09-01T09:00:00Z",
+      "role": "coach",
+      "birth_date": "1992-07-08",
+      "weight": 81.8,
+      "coaches": [],
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "club.user",
+    "pk": 5,
+    "fields": {
+      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "iryna.moroz",
+      "first_name": "Iryna",
+      "last_name": "Moroz",
+      "email": "iryna.moroz@club.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-09-01T09:00:00Z",
+      "role": "coach",
+      "birth_date": "1992-08-11",
+      "weight": 57.2,
+      "coaches": [],
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "club.user",
+    "pk": 6,
+    "fields": {
+      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "serhiy.boyko",
+      "first_name": "Serhiy",
+      "last_name": "Boyko",
+      "email": "serhiy.boyko@club.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-09-01T09:00:00Z",
+      "role": "coach",
+      "birth_date": "1977-12-13",
+      "weight": 93.2,
+      "coaches": [],
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "club.user",
+    "pk": 7,
+    "fields": {
+      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "natalia.marchenko",
+      "first_name": "Natalia",
+      "last_name": "Marchenko",
+      "email": "natalia.marchenko@club.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-09-01T09:00:00Z",
+      "role": "coach",
+      "birth_date": "1976-09-17",
+      "weight": 63.1,
+      "coaches": [],
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "club.user",
+    "pk": 8,
+    "fields": {
+      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "roman.polishchuk",
+      "first_name": "Roman",
+      "last_name": "Polishchuk",
+      "email": "roman.polishchuk@club.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-09-01T09:00:00Z",
+      "role": "coach",
+      "birth_date": "1980-11-26",
+      "weight": 78.5,
+      "coaches": [],
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "club.user",
+    "pk": 9,
+    "fields": {
+      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "oksana.rudenko",
+      "first_name": "Oksana",
+      "last_name": "Rudenko",
+      "email": "oksana.rudenko@club.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-09-01T09:00:00Z",
+      "role": "coach",
+      "birth_date": "1989-07-02",
+      "weight": 58.8,
+      "coaches": [],
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "club.user",
+    "pk": 10,
+    "fields": {
+      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "maksym.oliynyk",
+      "first_name": "Maksym",
+      "last_name": "Oliynyk",
+      "email": "maksym.oliynyk@club.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-09-01T09:00:00Z",
+      "role": "coach",
+      "birth_date": "1980-06-16",
+      "weight": 78.5,
+      "coaches": [],
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "club.user",
+    "pk": 11,
+    "fields": {
+      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "halyna.zinchenko",
+      "first_name": "Halyna",
+      "last_name": "Zinchenko",
+      "email": "halyna.zinchenko@club.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-09-01T09:00:00Z",
+      "role": "coach",
+      "birth_date": "1991-09-24",
+      "weight": 64.6,
+      "coaches": [],
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "club.user",
+    "pk": 12,
+    "fields": {
+      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "yaroslav.kovalchuk",
+      "first_name": "Yaroslav",
+      "last_name": "Kovalchuk",
+      "email": "yaroslav.kovalchuk@club.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-09-01T09:00:00Z",
+      "role": "athlete",
+      "birth_date": "2007-06-25",
+      "weight": 80.6,
+      "coaches": [
+        4
+      ],
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "club.user",
+    "pk": 13,
+    "fields": {
+      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "anna.shevchenko",
+      "first_name": "Anna",
+      "last_name": "Shevchenko",
+      "email": "anna.shevchenko@club.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-09-01T09:00:00Z",
+      "role": "athlete",
+      "birth_date": "2000-01-30",
+      "weight": 67.1,
+      "coaches": [
+        3
+      ],
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "club.user",
+    "pk": 14,
+    "fields": {
+      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "alina.polishchuk",
+      "first_name": "Alina",
+      "last_name": "Polishchuk",
+      "email": "alina.polishchuk@club.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-09-01T09:00:00Z",
+      "role": "athlete",
+      "birth_date": "2010-01-10",
+      "weight": 60.1,
+      "coaches": [
+        9
+      ],
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "club.user",
+    "pk": 15,
+    "fields": {
+      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "tetiana.melnyk",
+      "first_name": "Tetiana",
+      "last_name": "Melnyk",
+      "email": "tetiana.melnyk@club.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-09-01T09:00:00Z",
+      "role": "athlete",
+      "birth_date": "2002-04-25",
+      "weight": 59.0,
+      "coaches": [
+        11
+      ],
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "club.user",
+    "pk": 16,
+    "fields": {
+      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "dmytro.zinchenko",
+      "first_name": "Dmytro",
+      "last_name": "Zinchenko",
+      "email": "dmytro.zinchenko@club.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-09-01T09:00:00Z",
+      "role": "athlete",
+      "birth_date": "2003-03-23",
+      "weight": 68.0,
+      "coaches": [
+        3
+      ],
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "club.user",
+    "pk": 17,
+    "fields": {
+      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "roman.kravchenko",
+      "first_name": "Roman",
+      "last_name": "Kravchenko",
+      "email": "roman.kravchenko@club.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-09-01T09:00:00Z",
+      "role": "athlete",
+      "birth_date": "2006-04-21",
+      "weight": 75.9,
+      "coaches": [
+        4
+      ],
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "club.user",
+    "pk": 18,
+    "fields": {
+      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "daryna.danylenko",
+      "first_name": "Daryna",
+      "last_name": "Danylenko",
+      "email": "daryna.danylenko@club.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-09-01T09:00:00Z",
+      "role": "athlete",
+      "birth_date": "2001-11-02",
+      "weight": 66.7,
+      "coaches": [
+        11
+      ],
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "club.user",
+    "pk": 19,
+    "fields": {
+      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "yaroslav.lysenko",
+      "first_name": "Yaroslav",
+      "last_name": "Lysenko",
+      "email": "yaroslav.lysenko@club.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-09-01T09:00:00Z",
+      "role": "athlete",
+      "birth_date": "2002-12-05",
+      "weight": 76.2,
+      "coaches": [
+        10
+      ],
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "club.user",
+    "pk": 20,
+    "fields": {
+      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "dmytro.petrenko",
+      "first_name": "Dmytro",
+      "last_name": "Petrenko",
+      "email": "dmytro.petrenko@club.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-09-01T09:00:00Z",
+      "role": "athlete",
+      "birth_date": "2004-01-03",
+      "weight": 88.8,
+      "coaches": [
+        8
+      ],
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "club.user",
+    "pk": 21,
+    "fields": {
+      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "diana.danylenko",
+      "first_name": "Diana",
+      "last_name": "Danylenko",
+      "email": "diana.danylenko@club.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-09-01T09:00:00Z",
+      "role": "athlete",
+      "birth_date": "2001-03-16",
+      "weight": 54.3,
+      "coaches": [
+        8,
+        9
+      ],
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "club.user",
+    "pk": 22,
+    "fields": {
+      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "yulia.klymenko",
+      "first_name": "Yulia",
+      "last_name": "Klymenko",
+      "email": "yulia.klymenko@club.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-09-01T09:00:00Z",
+      "role": "athlete",
+      "birth_date": "2007-08-11",
+      "weight": 59.2,
+      "coaches": [
+        11
+      ],
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "club.user",
+    "pk": 23,
+    "fields": {
+      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "roman.polishchuk2",
+      "first_name": "Roman",
+      "last_name": "Polishchuk",
+      "email": "roman.polishchuk2@club.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-09-01T09:00:00Z",
+      "role": "athlete",
+      "birth_date": "2009-01-25",
+      "weight": 67.7,
+      "coaches": [
+        10
+      ],
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "club.user",
+    "pk": 24,
+    "fields": {
+      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "sofia.tkachenko",
+      "first_name": "Sofia",
+      "last_name": "Tkachenko",
+      "email": "sofia.tkachenko@club.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-09-01T09:00:00Z",
+      "role": "athlete",
+      "birth_date": "1999-06-05",
+      "weight": 51.1,
+      "coaches": [
+        8
+      ],
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "club.user",
+    "pk": 25,
+    "fields": {
+      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "polina.kovalchuk",
+      "first_name": "Polina",
+      "last_name": "Kovalchuk",
+      "email": "polina.kovalchuk@club.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-09-01T09:00:00Z",
+      "role": "athlete",
+      "birth_date": "2010-01-16",
+      "weight": 58.6,
+      "coaches": [
+        3
+      ],
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "club.user",
+    "pk": 26,
+    "fields": {
+      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "artem.tkachenko",
+      "first_name": "Artem",
+      "last_name": "Tkachenko",
+      "email": "artem.tkachenko@club.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-09-01T09:00:00Z",
+      "role": "athlete",
+      "birth_date": "1998-01-27",
+      "weight": 70.3,
+      "coaches": [
+        9
+      ],
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "club.user",
+    "pk": 27,
+    "fields": {
+      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "volodymyr.oliynyk",
+      "first_name": "Volodymyr",
+      "last_name": "Oliynyk",
+      "email": "volodymyr.oliynyk@club.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-09-01T09:00:00Z",
+      "role": "athlete",
+      "birth_date": "2009-05-21",
+      "weight": 86.7,
+      "coaches": [
+        6
+      ],
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "club.user",
+    "pk": 28,
+    "fields": {
+      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "maksym.polishchuk",
+      "first_name": "Maksym",
+      "last_name": "Polishchuk",
+      "email": "maksym.polishchuk@club.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-09-01T09:00:00Z",
+      "role": "athlete",
+      "birth_date": "2005-04-09",
+      "weight": 86.7,
+      "coaches": [
+        11
+      ],
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "club.user",
+    "pk": 29,
+    "fields": {
+      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "ivan.polishchuk",
+      "first_name": "Ivan",
+      "last_name": "Polishchuk",
+      "email": "ivan.polishchuk@club.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-09-01T09:00:00Z",
+      "role": "athlete",
+      "birth_date": "1999-04-20",
+      "weight": 90.8,
+      "coaches": [
+        5
+      ],
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "club.user",
+    "pk": 30,
+    "fields": {
+      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "diana.melnyk",
+      "first_name": "Diana",
+      "last_name": "Melnyk",
+      "email": "diana.melnyk@club.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-09-01T09:00:00Z",
+      "role": "athlete",
+      "birth_date": "2000-10-27",
+      "weight": 49.7,
+      "coaches": [
+        3,
+        10
+      ],
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "club.user",
+    "pk": 31,
+    "fields": {
+      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "vira.shevchuk",
+      "first_name": "Vira",
+      "last_name": "Shevchuk",
+      "email": "vira.shevchuk@club.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-09-01T09:00:00Z",
+      "role": "athlete",
+      "birth_date": "2002-07-06",
+      "weight": 51.3,
+      "coaches": [
+        5,
+        10
+      ],
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "club.user",
+    "pk": 32,
+    "fields": {
+      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "roman.zinchenko",
+      "first_name": "Roman",
+      "last_name": "Zinchenko",
+      "email": "roman.zinchenko@club.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-09-01T09:00:00Z",
+      "role": "athlete",
+      "birth_date": "2000-09-18",
+      "weight": 82.7,
+      "coaches": [
+        9,
+        10
+      ],
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "club.user",
+    "pk": 33,
+    "fields": {
+      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "kateryna.moroz",
+      "first_name": "Kateryna",
+      "last_name": "Moroz",
+      "email": "kateryna.moroz@club.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-09-01T09:00:00Z",
+      "role": "athlete",
+      "birth_date": "2002-12-10",
+      "weight": 48.4,
+      "coaches": [
+        11
+      ],
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "club.user",
+    "pk": 34,
+    "fields": {
+      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "sofia.petrenko",
+      "first_name": "Sofia",
+      "last_name": "Petrenko",
+      "email": "sofia.petrenko@club.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-09-01T09:00:00Z",
+      "role": "athlete",
+      "birth_date": "1999-08-04",
+      "weight": 49.3,
+      "coaches": [
+        7
+      ],
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "club.user",
+    "pk": 35,
+    "fields": {
+      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "volodymyr.zinchenko",
+      "first_name": "Volodymyr",
+      "last_name": "Zinchenko",
+      "email": "volodymyr.zinchenko@club.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-09-01T09:00:00Z",
+      "role": "athlete",
+      "birth_date": "2010-12-04",
+      "weight": 77.0,
+      "coaches": [
+        11
+      ],
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "club.user",
+    "pk": 36,
+    "fields": {
+      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "mykyta.rudenko",
+      "first_name": "Mykyta",
+      "last_name": "Rudenko",
+      "email": "mykyta.rudenko@club.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-09-01T09:00:00Z",
+      "role": "athlete",
+      "birth_date": "2005-12-12",
+      "weight": 66.7,
+      "coaches": [
+        8
+      ],
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "club.user",
+    "pk": 37,
+    "fields": {
+      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "halyna.klymenko",
+      "first_name": "Halyna",
+      "last_name": "Klymenko",
+      "email": "halyna.klymenko@club.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-09-01T09:00:00Z",
+      "role": "athlete",
+      "birth_date": "2007-01-12",
+      "weight": 49.1,
+      "coaches": [
+        2
+      ],
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "club.user",
+    "pk": 38,
+    "fields": {
+      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "ivan.petrenko2",
+      "first_name": "Ivan",
+      "last_name": "Petrenko",
+      "email": "ivan.petrenko2@club.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-09-01T09:00:00Z",
+      "role": "athlete",
+      "birth_date": "2002-02-12",
+      "weight": 66.7,
+      "coaches": [
+        4,
+        8
+      ],
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "club.user",
+    "pk": 39,
+    "fields": {
+      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "yulia.melnyk",
+      "first_name": "Yulia",
+      "last_name": "Melnyk",
+      "email": "yulia.melnyk@club.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-09-01T09:00:00Z",
+      "role": "athlete",
+      "birth_date": "2010-02-15",
+      "weight": 56.9,
+      "coaches": [
+        2
+      ],
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "club.user",
+    "pk": 40,
+    "fields": {
+      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "oleh.vasylenko",
+      "first_name": "Oleh",
+      "last_name": "Vasylenko",
+      "email": "oleh.vasylenko@club.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-09-01T09:00:00Z",
+      "role": "athlete",
+      "birth_date": "2008-11-22",
+      "weight": 89.7,
+      "coaches": [
+        8
+      ],
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "club.user",
+    "pk": 41,
+    "fields": {
+      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "roman.bondar",
+      "first_name": "Roman",
+      "last_name": "Bondar",
+      "email": "roman.bondar@club.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-09-01T09:00:00Z",
+      "role": "athlete",
+      "birth_date": "2003-12-13",
+      "weight": 65.8,
+      "coaches": [
+        8
+      ],
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "club.user",
+    "pk": 42,
+    "fields": {
+      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "vlad.boyko",
+      "first_name": "Vlad",
+      "last_name": "Boyko",
+      "email": "vlad.boyko@club.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-09-01T09:00:00Z",
+      "role": "athlete",
+      "birth_date": "2004-08-27",
+      "weight": 74.8,
+      "coaches": [
+        4,
+        5
+      ],
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "club.user",
+    "pk": 43,
+    "fields": {
+      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "sofia.bondarenko",
+      "first_name": "Sofia",
+      "last_name": "Bondarenko",
+      "email": "sofia.bondarenko@club.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-09-01T09:00:00Z",
+      "role": "athlete",
+      "birth_date": "1999-04-14",
+      "weight": 62.7,
+      "coaches": [
+        7
+      ],
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "club.user",
+    "pk": 44,
+    "fields": {
+      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "vira.oliynyk",
+      "first_name": "Vira",
+      "last_name": "Oliynyk",
+      "email": "vira.oliynyk@club.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-09-01T09:00:00Z",
+      "role": "athlete",
+      "birth_date": "2009-05-23",
+      "weight": 66.4,
+      "coaches": [
+        2
+      ],
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "club.user",
+    "pk": 45,
+    "fields": {
+      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "iryna.melnyk",
+      "first_name": "Iryna",
+      "last_name": "Melnyk",
+      "email": "iryna.melnyk@club.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-09-01T09:00:00Z",
+      "role": "athlete",
+      "birth_date": "2000-09-09",
+      "weight": 59.9,
+      "coaches": [
+        8
+      ],
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "club.user",
+    "pk": 46,
+    "fields": {
+      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "anton.petrenko",
+      "first_name": "Anton",
+      "last_name": "Petrenko",
+      "email": "anton.petrenko@club.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-09-01T09:00:00Z",
+      "role": "athlete",
+      "birth_date": "1999-11-03",
+      "weight": 80.3,
+      "coaches": [
+        11
+      ],
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "club.user",
+    "pk": 47,
+    "fields": {
+      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "diana.bondarenko",
+      "first_name": "Diana",
+      "last_name": "Bondarenko",
+      "email": "diana.bondarenko@club.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-09-01T09:00:00Z",
+      "role": "athlete",
+      "birth_date": "2005-01-17",
+      "weight": 58.5,
+      "coaches": [
+        5
+      ],
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "club.user",
+    "pk": 48,
+    "fields": {
+      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "tetiana.savchenko",
+      "first_name": "Tetiana",
+      "last_name": "Savchenko",
+      "email": "tetiana.savchenko@club.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-09-01T09:00:00Z",
+      "role": "athlete",
+      "birth_date": "2005-02-03",
+      "weight": 61.4,
+      "coaches": [
+        9
+      ],
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "club.user",
+    "pk": 49,
+    "fields": {
+      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "oleh.kovalenko",
+      "first_name": "Oleh",
+      "last_name": "Kovalenko",
+      "email": "oleh.kovalenko@club.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-09-01T09:00:00Z",
+      "role": "athlete",
+      "birth_date": "2010-01-22",
+      "weight": 76.0,
+      "coaches": [
+        3
+      ],
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "club.user",
+    "pk": 50,
+    "fields": {
+      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "daryna.savchenko",
+      "first_name": "Daryna",
+      "last_name": "Savchenko",
+      "email": "daryna.savchenko@club.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-09-01T09:00:00Z",
+      "role": "athlete",
+      "birth_date": "2006-04-16",
+      "weight": 66.7,
+      "coaches": [
+        5
+      ],
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "club.user",
+    "pk": 51,
+    "fields": {
+      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "halyna.shevchuk",
+      "first_name": "Halyna",
+      "last_name": "Shevchuk",
+      "email": "halyna.shevchuk@club.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-09-01T09:00:00Z",
+      "role": "athlete",
+      "birth_date": "2004-09-18",
+      "weight": 62.1,
+      "coaches": [
+        10
+      ],
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "club.user",
+    "pk": 52,
+    "fields": {
+      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "ivan.savchenko",
+      "first_name": "Ivan",
+      "last_name": "Savchenko",
+      "email": "ivan.savchenko@club.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-09-01T09:00:00Z",
+      "role": "athlete",
+      "birth_date": "2001-06-27",
+      "weight": 69.3,
+      "coaches": [
+        10
+      ],
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "club.user",
+    "pk": 53,
+    "fields": {
+      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "polina.shevchenko",
+      "first_name": "Polina",
+      "last_name": "Shevchenko",
+      "email": "polina.shevchenko@club.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-09-01T09:00:00Z",
+      "role": "athlete",
+      "birth_date": "2009-05-03",
+      "weight": 62.4,
+      "coaches": [
+        6
+      ],
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "club.user",
+    "pk": 54,
+    "fields": {
+      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "dmytro.melnyk",
+      "first_name": "Dmytro",
+      "last_name": "Melnyk",
+      "email": "dmytro.melnyk@club.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-09-01T09:00:00Z",
+      "role": "athlete",
+      "birth_date": "1998-01-30",
+      "weight": 82.2,
+      "coaches": [
+        2
+      ],
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "club.user",
+    "pk": 55,
+    "fields": {
+      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "anna.pavlenko",
+      "first_name": "Anna",
+      "last_name": "Pavlenko",
+      "email": "anna.pavlenko@club.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-09-01T09:00:00Z",
+      "role": "athlete",
+      "birth_date": "2010-05-17",
+      "weight": 67.6,
+      "coaches": [
+        9
+      ],
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "club.user",
+    "pk": 56,
+    "fields": {
+      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "yuriy.kovalenko",
+      "first_name": "Yuriy",
+      "last_name": "Kovalenko",
+      "email": "yuriy.kovalenko@club.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-09-01T09:00:00Z",
+      "role": "athlete",
+      "birth_date": "1998-10-23",
+      "weight": 63.9,
+      "coaches": [
+        10
+      ],
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "club.user",
+    "pk": 57,
+    "fields": {
+      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "anton.shevchuk",
+      "first_name": "Anton",
+      "last_name": "Shevchuk",
+      "email": "anton.shevchuk@club.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-09-01T09:00:00Z",
+      "role": "athlete",
+      "birth_date": "2004-11-30",
+      "weight": 65.2,
+      "coaches": [
+        2
+      ],
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "club.user",
+    "pk": 58,
+    "fields": {
+      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "sofia.polishchuk",
+      "first_name": "Sofia",
+      "last_name": "Polishchuk",
+      "email": "sofia.polishchuk@club.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-09-01T09:00:00Z",
+      "role": "athlete",
+      "birth_date": "2005-12-07",
+      "weight": 52.2,
+      "coaches": [
+        3
+      ],
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "club.user",
+    "pk": 59,
+    "fields": {
+      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "pavlo.hrytsenko",
+      "first_name": "Pavlo",
+      "last_name": "Hrytsenko",
+      "email": "pavlo.hrytsenko@club.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-09-01T09:00:00Z",
+      "role": "athlete",
+      "birth_date": "2001-12-21",
+      "weight": 86.2,
+      "coaches": [
+        4
+      ],
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "club.user",
+    "pk": 60,
+    "fields": {
+      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "andriy.lysenko",
+      "first_name": "Andriy",
+      "last_name": "Lysenko",
+      "email": "andriy.lysenko@club.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-09-01T09:00:00Z",
+      "role": "athlete",
+      "birth_date": "2003-07-26",
+      "weight": 85.8,
+      "coaches": [
+        8
+      ],
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "club.user",
+    "pk": 61,
+    "fields": {
+      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "olena.marchenko",
+      "first_name": "Olena",
+      "last_name": "Marchenko",
+      "email": "olena.marchenko@club.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-09-01T09:00:00Z",
+      "role": "athlete",
+      "birth_date": "2008-04-28",
+      "weight": 65.4,
+      "coaches": [
+        5,
+        11
+      ],
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "club.user",
+    "pk": 62,
+    "fields": {
+      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "yulia.petrenko",
+      "first_name": "Yulia",
+      "last_name": "Petrenko",
+      "email": "yulia.petrenko@club.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-09-01T09:00:00Z",
+      "role": "athlete",
+      "birth_date": "2005-05-13",
+      "weight": 48.5,
+      "coaches": [
+        8
+      ],
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "club.user",
+    "pk": 63,
+    "fields": {
+      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "kateryna.vasylenko",
+      "first_name": "Kateryna",
+      "last_name": "Vasylenko",
+      "email": "kateryna.vasylenko@club.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-09-01T09:00:00Z",
+      "role": "athlete",
+      "birth_date": "1998-08-15",
+      "weight": 53.6,
+      "coaches": [
+        7,
+        10
+      ],
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "club.user",
+    "pk": 64,
+    "fields": {
+      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "daryna.lysenko",
+      "first_name": "Daryna",
+      "last_name": "Lysenko",
+      "email": "daryna.lysenko@club.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-09-01T09:00:00Z",
+      "role": "athlete",
+      "birth_date": "2000-06-07",
+      "weight": 59.6,
+      "coaches": [
+        2
+      ],
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "club.user",
+    "pk": 65,
+    "fields": {
+      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "denys.klymenko",
+      "first_name": "Denys",
+      "last_name": "Klymenko",
+      "email": "denys.klymenko@club.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-09-01T09:00:00Z",
+      "role": "athlete",
+      "birth_date": "2000-08-05",
+      "weight": 87.5,
+      "coaches": [
+        10,
+        11
+      ],
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "club.user",
+    "pk": 66,
+    "fields": {
+      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "diana.shevchenko",
+      "first_name": "Diana",
+      "last_name": "Shevchenko",
+      "email": "diana.shevchenko@club.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-09-01T09:00:00Z",
+      "role": "athlete",
+      "birth_date": "2010-01-28",
+      "weight": 53.1,
+      "coaches": [
+        2,
+        10
+      ],
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "club.user",
+    "pk": 67,
+    "fields": {
+      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "bohdan.polishchuk",
+      "first_name": "Bohdan",
+      "last_name": "Polishchuk",
+      "email": "bohdan.polishchuk@club.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-09-01T09:00:00Z",
+      "role": "athlete",
+      "birth_date": "2005-01-15",
+      "weight": 75.1,
+      "coaches": [
+        11
+      ],
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "club.user",
+    "pk": 68,
+    "fields": {
+      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "ivan.klymenko",
+      "first_name": "Ivan",
+      "last_name": "Klymenko",
+      "email": "ivan.klymenko@club.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-09-01T09:00:00Z",
+      "role": "athlete",
+      "birth_date": "2005-04-26",
+      "weight": 91.5,
+      "coaches": [
+        8
+      ],
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "club.user",
+    "pk": 69,
+    "fields": {
+      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "oksana.shevchuk",
+      "first_name": "Oksana",
+      "last_name": "Shevchuk",
+      "email": "oksana.shevchuk@club.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-09-01T09:00:00Z",
+      "role": "athlete",
+      "birth_date": "2010-10-07",
+      "weight": 50.5,
+      "coaches": [
+        4,
+        8
+      ],
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "club.user",
+    "pk": 70,
+    "fields": {
+      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "marta.kovalenko",
+      "first_name": "Marta",
+      "last_name": "Kovalenko",
+      "email": "marta.kovalenko@club.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-09-01T09:00:00Z",
+      "role": "athlete",
+      "birth_date": "2005-03-24",
+      "weight": 54.1,
+      "coaches": [
+        8
+      ],
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "club.user",
+    "pk": 71,
+    "fields": {
+      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "vlad.zinchenko",
+      "first_name": "Vlad",
+      "last_name": "Zinchenko",
+      "email": "vlad.zinchenko@club.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-09-01T09:00:00Z",
+      "role": "athlete",
+      "birth_date": "2004-05-13",
+      "weight": 67.5,
+      "coaches": [
+        3,
+        4
+      ],
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "club.user",
+    "pk": 72,
+    "fields": {
+      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "danylo.moroz",
+      "first_name": "Danylo",
+      "last_name": "Moroz",
+      "email": "danylo.moroz@club.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-09-01T09:00:00Z",
+      "role": "athlete",
+      "birth_date": "2003-01-15",
+      "weight": 63.3,
+      "coaches": [
+        6
+      ],
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "club.user",
+    "pk": 73,
+    "fields": {
+      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "maksym.kovalenko",
+      "first_name": "Maksym",
+      "last_name": "Kovalenko",
+      "email": "maksym.kovalenko@club.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-09-01T09:00:00Z",
+      "role": "athlete",
+      "birth_date": "2008-03-19",
+      "weight": 61.6,
+      "coaches": [
+        3,
+        11
+      ],
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "club.user",
+    "pk": 74,
+    "fields": {
+      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "diana.shevchenko2",
+      "first_name": "Diana",
+      "last_name": "Shevchenko",
+      "email": "diana.shevchenko2@club.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-09-01T09:00:00Z",
+      "role": "athlete",
+      "birth_date": "2003-06-22",
+      "weight": 62.4,
+      "coaches": [
+        8,
+        9
+      ],
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "club.user",
+    "pk": 75,
+    "fields": {
+      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "maria.vasylenko",
+      "first_name": "Maria",
+      "last_name": "Vasylenko",
+      "email": "maria.vasylenko@club.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-09-01T09:00:00Z",
+      "role": "athlete",
+      "birth_date": "2002-11-28",
+      "weight": 65.2,
+      "coaches": [
+        8
+      ],
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "club.user",
+    "pk": 76,
+    "fields": {
+      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "zoriana.kovalchuk",
+      "first_name": "Zoriana",
+      "last_name": "Kovalchuk",
+      "email": "zoriana.kovalchuk@club.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-09-01T09:00:00Z",
+      "role": "athlete",
+      "birth_date": "2008-03-28",
+      "weight": 49.0,
+      "coaches": [
+        3
+      ],
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "club.user",
+    "pk": 77,
+    "fields": {
+      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "halyna.zinchenko2",
+      "first_name": "Halyna",
+      "last_name": "Zinchenko",
+      "email": "halyna.zinchenko2@club.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-09-01T09:00:00Z",
+      "role": "athlete",
+      "birth_date": "2009-04-28",
+      "weight": 58.6,
+      "coaches": [
+        9
+      ],
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "club.user",
+    "pk": 78,
+    "fields": {
+      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "marta.kovalchuk",
+      "first_name": "Marta",
+      "last_name": "Kovalchuk",
+      "email": "marta.kovalchuk@club.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-09-01T09:00:00Z",
+      "role": "athlete",
+      "birth_date": "2003-07-19",
+      "weight": 65.9,
+      "coaches": [
+        6,
+        9
+      ],
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "club.user",
+    "pk": 79,
+    "fields": {
+      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "volodymyr.vasylenko",
+      "first_name": "Volodymyr",
+      "last_name": "Vasylenko",
+      "email": "volodymyr.vasylenko@club.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-09-01T09:00:00Z",
+      "role": "athlete",
+      "birth_date": "2007-11-13",
+      "weight": 87.2,
+      "coaches": [
+        5,
+        6
+      ],
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "club.user",
+    "pk": 80,
+    "fields": {
+      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "oksana.petrenko",
+      "first_name": "Oksana",
+      "last_name": "Petrenko",
+      "email": "oksana.petrenko@club.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-09-01T09:00:00Z",
+      "role": "athlete",
+      "birth_date": "1999-10-23",
+      "weight": 53.4,
+      "coaches": [
+        10
+      ],
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "club.user",
+    "pk": 81,
+    "fields": {
+      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "yulia.marchenko",
+      "first_name": "Yulia",
+      "last_name": "Marchenko",
+      "email": "yulia.marchenko@club.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-09-01T09:00:00Z",
+      "role": "athlete",
+      "birth_date": "2007-04-22",
+      "weight": 61.9,
+      "coaches": [
+        3
+      ],
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "club.user",
+    "pk": 82,
+    "fields": {
+      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "marta.kovalchuk2",
+      "first_name": "Marta",
+      "last_name": "Kovalchuk",
+      "email": "marta.kovalchuk2@club.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-09-01T09:00:00Z",
+      "role": "athlete",
+      "birth_date": "2006-09-26",
+      "weight": 56.3,
+      "coaches": [
+        8
+      ],
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "club.user",
+    "pk": 83,
+    "fields": {
+      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "anton.danylenko",
+      "first_name": "Anton",
+      "last_name": "Danylenko",
+      "email": "anton.danylenko@club.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-09-01T09:00:00Z",
+      "role": "athlete",
+      "birth_date": "2005-11-21",
+      "weight": 60.7,
+      "coaches": [
+        2,
+        9
+      ],
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "club.user",
+    "pk": 84,
+    "fields": {
+      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "tetiana.rudenko",
+      "first_name": "Tetiana",
+      "last_name": "Rudenko",
+      "email": "tetiana.rudenko@club.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-09-01T09:00:00Z",
+      "role": "athlete",
+      "birth_date": "2002-12-03",
+      "weight": 58.8,
+      "coaches": [
+        9
+      ],
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "club.user",
+    "pk": 85,
+    "fields": {
+      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "vira.kovalenko",
+      "first_name": "Vira",
+      "last_name": "Kovalenko",
+      "email": "vira.kovalenko@club.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-09-01T09:00:00Z",
+      "role": "athlete",
+      "birth_date": "2000-11-11",
+      "weight": 55.8,
+      "coaches": [
+        4,
+        9
+      ],
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "club.user",
+    "pk": 86,
+    "fields": {
+      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "yuriy.kovalenko2",
+      "first_name": "Yuriy",
+      "last_name": "Kovalenko",
+      "email": "yuriy.kovalenko2@club.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-09-01T09:00:00Z",
+      "role": "athlete",
+      "birth_date": "2007-08-13",
+      "weight": 91.7,
+      "coaches": [
+        3
+      ],
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "club.user",
+    "pk": 87,
+    "fields": {
+      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "halyna.lysenko",
+      "first_name": "Halyna",
+      "last_name": "Lysenko",
+      "email": "halyna.lysenko@club.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-09-01T09:00:00Z",
+      "role": "athlete",
+      "birth_date": "2008-03-13",
+      "weight": 49.0,
+      "coaches": [
+        5,
+        7
+      ],
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "club.user",
+    "pk": 88,
+    "fields": {
+      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "tetiana.kravchenko",
+      "first_name": "Tetiana",
+      "last_name": "Kravchenko",
+      "email": "tetiana.kravchenko@club.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-09-01T09:00:00Z",
+      "role": "athlete",
+      "birth_date": "2008-07-19",
+      "weight": 63.0,
+      "coaches": [
+        3,
+        6
+      ],
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "club.user",
+    "pk": 89,
+    "fields": {
+      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "marta.bondar",
+      "first_name": "Marta",
+      "last_name": "Bondar",
+      "email": "marta.bondar@club.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-09-01T09:00:00Z",
+      "role": "athlete",
+      "birth_date": "1999-07-17",
+      "weight": 68.0,
+      "coaches": [
+        5
+      ],
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "club.user",
+    "pk": 90,
+    "fields": {
+      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "dmytro.vasylenko",
+      "first_name": "Dmytro",
+      "last_name": "Vasylenko",
+      "email": "dmytro.vasylenko@club.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-09-01T09:00:00Z",
+      "role": "athlete",
+      "birth_date": "1998-06-16",
+      "weight": 61.1,
+      "coaches": [
+        5
+      ],
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "club.user",
+    "pk": 91,
+    "fields": {
+      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "yaroslav.savchenko",
+      "first_name": "Yaroslav",
+      "last_name": "Savchenko",
+      "email": "yaroslav.savchenko@club.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-09-01T09:00:00Z",
+      "role": "athlete",
+      "birth_date": "2002-11-21",
+      "weight": 76.6,
+      "coaches": [
+        11
+      ],
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "club.user",
+    "pk": 92,
+    "fields": {
+      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "volodymyr.vasylenko2",
+      "first_name": "Volodymyr",
+      "last_name": "Vasylenko",
+      "email": "volodymyr.vasylenko2@club.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-09-01T09:00:00Z",
+      "role": "athlete",
+      "birth_date": "2004-12-23",
+      "weight": 72.9,
+      "coaches": [
+        4
+      ],
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "club.user",
+    "pk": 93,
+    "fields": {
+      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "maria.boyko",
+      "first_name": "Maria",
+      "last_name": "Boyko",
+      "email": "maria.boyko@club.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-09-01T09:00:00Z",
+      "role": "athlete",
+      "birth_date": "1999-09-15",
+      "weight": 59.5,
+      "coaches": [
+        5,
+        8
+      ],
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "club.user",
+    "pk": 94,
+    "fields": {
+      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "yaroslav.tkachenko",
+      "first_name": "Yaroslav",
+      "last_name": "Tkachenko",
+      "email": "yaroslav.tkachenko@club.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-09-01T09:00:00Z",
+      "role": "athlete",
+      "birth_date": "2000-09-18",
+      "weight": 84.4,
+      "coaches": [
+        11
+      ],
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "club.user",
+    "pk": 95,
+    "fields": {
+      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "anton.bondar",
+      "first_name": "Anton",
+      "last_name": "Bondar",
+      "email": "anton.bondar@club.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-09-01T09:00:00Z",
+      "role": "athlete",
+      "birth_date": "2009-05-07",
+      "weight": 72.2,
+      "coaches": [
+        3,
+        7
+      ],
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "club.user",
+    "pk": 96,
+    "fields": {
+      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "andriy.rudenko",
+      "first_name": "Andriy",
+      "last_name": "Rudenko",
+      "email": "andriy.rudenko@club.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-09-01T09:00:00Z",
+      "role": "athlete",
+      "birth_date": "2006-02-15",
+      "weight": 88.8,
+      "coaches": [
+        8
+      ],
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "club.user",
+    "pk": 97,
+    "fields": {
+      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "vlad.danylenko",
+      "first_name": "Vlad",
+      "last_name": "Danylenko",
+      "email": "vlad.danylenko@club.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-09-01T09:00:00Z",
+      "role": "athlete",
+      "birth_date": "2004-01-22",
+      "weight": 65.4,
+      "coaches": [
+        10
+      ],
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "club.user",
+    "pk": 98,
+    "fields": {
+      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "yuriy.vasylenko",
+      "first_name": "Yuriy",
+      "last_name": "Vasylenko",
+      "email": "yuriy.vasylenko@club.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-09-01T09:00:00Z",
+      "role": "athlete",
+      "birth_date": "2005-03-25",
+      "weight": 76.9,
+      "coaches": [
+        6,
+        11
+      ],
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "club.user",
+    "pk": 99,
+    "fields": {
+      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "oleh.kravchenko",
+      "first_name": "Oleh",
+      "last_name": "Kravchenko",
+      "email": "oleh.kravchenko@club.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-09-01T09:00:00Z",
+      "role": "athlete",
+      "birth_date": "2010-10-13",
+      "weight": 90.9,
+      "coaches": [
+        9
+      ],
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "club.user",
+    "pk": 100,
+    "fields": {
+      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "roman.moroz",
+      "first_name": "Roman",
+      "last_name": "Moroz",
+      "email": "roman.moroz@club.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-09-01T09:00:00Z",
+      "role": "athlete",
+      "birth_date": "2008-12-08",
+      "weight": 61.0,
+      "coaches": [
+        4
+      ],
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "club.user",
+    "pk": 101,
+    "fields": {
+      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "daryna.moroz",
+      "first_name": "Daryna",
+      "last_name": "Moroz",
+      "email": "daryna.moroz@club.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-09-01T09:00:00Z",
+      "role": "athlete",
+      "birth_date": "1998-03-25",
+      "weight": 53.6,
+      "coaches": [
+        10
+      ],
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "club.user",
+    "pk": 102,
+    "fields": {
+      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "bohdan.melnyk",
+      "first_name": "Bohdan",
+      "last_name": "Melnyk",
+      "email": "bohdan.melnyk@club.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-09-01T09:00:00Z",
+      "role": "athlete",
+      "birth_date": "2003-05-23",
+      "weight": 68.4,
+      "coaches": [
+        9,
+        10
+      ],
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "club.user",
+    "pk": 103,
+    "fields": {
+      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "mykyta.kovalchuk",
+      "first_name": "Mykyta",
+      "last_name": "Kovalchuk",
+      "email": "mykyta.kovalchuk@club.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-09-01T09:00:00Z",
+      "role": "athlete",
+      "birth_date": "2002-12-21",
+      "weight": 87.8,
+      "coaches": [
+        6
+      ],
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "club.user",
+    "pk": 104,
+    "fields": {
+      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "yulia.boyko",
+      "first_name": "Yulia",
+      "last_name": "Boyko",
+      "email": "yulia.boyko@club.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-09-01T09:00:00Z",
+      "role": "athlete",
+      "birth_date": "2010-06-01",
+      "weight": 61.3,
+      "coaches": [
+        9
+      ],
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "club.user",
+    "pk": 105,
+    "fields": {
+      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "pavlo.klymenko",
+      "first_name": "Pavlo",
+      "last_name": "Klymenko",
+      "email": "pavlo.klymenko@club.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-09-01T09:00:00Z",
+      "role": "athlete",
+      "birth_date": "2004-01-29",
+      "weight": 79.3,
+      "coaches": [
+        9
+      ],
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "club.user",
+    "pk": 106,
+    "fields": {
+      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "yulia.tkachenko",
+      "first_name": "Yulia",
+      "last_name": "Tkachenko",
+      "email": "yulia.tkachenko@club.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-09-01T09:00:00Z",
+      "role": "athlete",
+      "birth_date": "2010-01-07",
+      "weight": 62.4,
+      "coaches": [
+        3
+      ],
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "club.user",
+    "pk": 107,
+    "fields": {
+      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "taras.shevchenko",
+      "first_name": "Taras",
+      "last_name": "Shevchenko",
+      "email": "taras.shevchenko@club.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-09-01T09:00:00Z",
+      "role": "athlete",
+      "birth_date": "2004-05-07",
+      "weight": 67.6,
+      "coaches": [
+        6,
+        10
+      ],
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "club.user",
+    "pk": 108,
+    "fields": {
+      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "bohdan.boyko",
+      "first_name": "Bohdan",
+      "last_name": "Boyko",
+      "email": "bohdan.boyko@club.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-09-01T09:00:00Z",
+      "role": "athlete",
+      "birth_date": "1998-04-26",
+      "weight": 68.0,
+      "coaches": [
+        6
+      ],
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "club.user",
+    "pk": 109,
+    "fields": {
+      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "maksym.kravchenko",
+      "first_name": "Maksym",
+      "last_name": "Kravchenko",
+      "email": "maksym.kravchenko@club.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-09-01T09:00:00Z",
+      "role": "athlete",
+      "birth_date": "2004-07-21",
+      "weight": 61.6,
+      "coaches": [
+        10
+      ],
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "club.user",
+    "pk": 110,
+    "fields": {
+      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "maksym.pavlenko",
+      "first_name": "Maksym",
+      "last_name": "Pavlenko",
+      "email": "maksym.pavlenko@club.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-09-01T09:00:00Z",
+      "role": "athlete",
+      "birth_date": "2010-11-16",
+      "weight": 90.4,
+      "coaches": [
+        2,
+        3
+      ],
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "club.user",
+    "pk": 111,
+    "fields": {
+      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "vira.kovalchuk",
+      "first_name": "Vira",
+      "last_name": "Kovalchuk",
+      "email": "vira.kovalchuk@club.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-09-01T09:00:00Z",
+      "role": "athlete",
+      "birth_date": "2008-09-18",
+      "weight": 54.8,
+      "coaches": [
+        6
+      ],
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "club.gym",
+    "pk": 1,
+    "fields": {
+      "address": "Gertsena, 35",
+      "coaches": [
+        3,
+        8,
+        9
+      ]
+    }
+  },
+  {
+    "model": "club.gym",
+    "pk": 2,
+    "fields": {
+      "address": "Khreshchatyk, 10",
+      "coaches": [
+        2,
+        4,
+        11
+      ]
+    }
+  },
+  {
+    "model": "club.gym",
+    "pk": 3,
+    "fields": {
+      "address": "Peremohy Ave, 52",
+      "coaches": [
+        3,
+        6,
+        11
+      ]
+    }
+  },
+  {
+    "model": "club.gym",
+    "pk": 4,
+    "fields": {
+      "address": "Shevchenka Blvd, 21",
+      "coaches": [
+        3,
+        8,
+        10
+      ]
+    }
+  },
+  {
+    "model": "club.gym",
+    "pk": 5,
+    "fields": {
+      "address": "Obolonska Emb, 7",
+      "coaches": [
+        5,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    }
+  },
+  {
+    "model": "club.gym",
+    "pk": 6,
+    "fields": {
+      "address": "Lesi Ukrainky Blvd, 14",
+      "coaches": [
+        6,
+        8,
+        9,
+        11
+      ]
+    }
+  },
+  {
+    "model": "club.trainingsession",
+    "pk": 1,
+    "fields": {
+      "starts_at": "2026-09-21T09:00:00Z",
+      "ends_at": "2026-09-21T10:00:00Z",
+      "gym": 5,
+      "coach": 11,
+      "athletes": [
+        15,
+        18,
+        22,
+        28,
+        33,
+        35,
+        46,
+        61,
+        65,
+        67,
+        73,
+        91,
+        94,
+        98
+      ]
+    }
+  },
+  {
+    "model": "club.trainingsession",
+    "pk": 2,
+    "fields": {
+      "starts_at": "2026-09-22T15:00:00Z",
+      "ends_at": "2026-09-22T16:30:00Z",
+      "gym": 1,
+      "coach": 3,
+      "athletes": [
+        13,
+        16,
+        30,
+        49,
+        58,
+        71,
+        81,
+        86,
+        88,
+        95,
+        106,
+        110
+      ]
+    }
+  },
+  {
+    "model": "club.trainingsession",
+    "pk": 3,
+    "fields": {
+      "starts_at": "2026-09-23T09:00:00Z",
+      "ends_at": "2026-09-23T10:00:00Z",
+      "gym": 2,
+      "coach": 2,
+      "athletes": [
+        37,
+        39,
+        44,
+        54,
+        57,
+        64,
+        66,
+        83,
+        110
+      ]
+    }
+  },
+  {
+    "model": "club.trainingsession",
+    "pk": 4,
+    "fields": {
+      "starts_at": "2026-09-24T17:00:00Z",
+      "ends_at": "2026-09-24T18:30:00Z",
+      "gym": 5,
+      "coach": 5,
+      "athletes": [
+        29,
+        31,
+        42,
+        47,
+        50,
+        61,
+        79,
+        87,
+        89,
+        90,
+        93
+      ]
+    }
+  },
+  {
+    "model": "club.trainingsession",
+    "pk": 5,
+    "fields": {
+      "starts_at": "2026-09-25T17:00:00Z",
+      "ends_at": "2026-09-25T18:30:00Z",
+      "gym": 4,
+      "coach": 10,
+      "athletes": [
+        23,
+        51,
+        52,
+        56,
+        97,
+        101,
+        107
+      ]
+    }
+  },
+  {
+    "model": "club.trainingsession",
+    "pk": 6,
+    "fields": {
+      "starts_at": "2026-09-26T11:00:00Z",
+      "ends_at": "2026-09-26T12:30:00Z",
+      "gym": 6,
+      "coach": 6,
+      "athletes": [
+        27,
+        53,
+        72,
+        78,
+        79,
+        88,
+        98,
+        103,
+        107,
+        108,
+        111
+      ]
+    }
+  },
+  {
+    "model": "club.trainingsession",
+    "pk": 7,
+    "fields": {
+      "starts_at": "2026-09-28T18:30:00Z",
+      "ends_at": "2026-09-28T20:00:00Z",
+      "gym": 1,
+      "coach": 9,
+      "athletes": [
+        14,
+        21,
+        26,
+        32,
+        48,
+        55,
+        77,
+        78,
+        83,
+        84,
+        104
+      ]
+    }
+  },
+  {
+    "model": "club.trainingsession",
+    "pk": 8,
+    "fields": {
+      "starts_at": "2026-09-28T17:00:00Z",
+      "ends_at": "2026-09-28T18:30:00Z",
+      "gym": 2,
+      "coach": 4,
+      "athletes": [
+        12,
+        38,
+        42,
+        59,
+        85,
+        100
+      ]
+    }
+  },
+  {
+    "model": "club.trainingsession",
+    "pk": 9,
+    "fields": {
+      "starts_at": "2026-09-29T11:00:00Z",
+      "ends_at": "2026-09-29T12:00:00Z",
+      "gym": 4,
+      "coach": 3,
+      "athletes": [
+        16,
+        25,
+        30,
+        49,
+        58,
+        71,
+        73,
+        76,
+        86,
+        88,
+        106,
+        110
+      ]
+    }
+  },
+  {
+    "model": "club.trainingsession",
+    "pk": 10,
+    "fields": {
+      "starts_at": "2026-09-29T11:00:00Z",
+      "ends_at": "2026-09-29T12:30:00Z",
+      "gym": 4,
+      "coach": 10,
+      "athletes": [
+        23,
+        32,
+        51,
+        52,
+        63,
+        101,
+        107,
+        109
+      ]
+    }
+  },
+  {
+    "model": "club.trainingsession",
+    "pk": 11,
+    "fields": {
+      "starts_at": "2026-09-30T15:00:00Z",
+      "ends_at": "2026-09-30T16:30:00Z",
+      "gym": 1,
+      "coach": 8,
+      "athletes": [
+        40,
+        60,
+        69,
+        70,
+        74,
+        75,
+        82
+      ]
+    }
+  },
+  {
+    "model": "club.trainingsession",
+    "pk": 12,
+    "fields": {
+      "starts_at": "2026-10-01T11:00:00Z",
+      "ends_at": "2026-10-01T12:00:00Z",
+      "gym": 4,
+      "coach": 8,
+      "athletes": [
+        20,
+        21,
+        24,
+        38,
+        40,
+        41,
+        45,
+        68,
+        69,
+        70,
+        74,
+        75,
+        93,
+        96
+      ]
+    }
+  },
+  {
+    "model": "club.trainingsession",
+    "pk": 13,
+    "fields": {
+      "starts_at": "2026-10-02T17:00:00Z",
+      "ends_at": "2026-10-02T18:00:00Z",
+      "gym": 3,
+      "coach": 3,
+      "athletes": [
+        13,
+        16,
+        25,
+        30,
+        49,
+        58,
+        71,
+        73,
+        76,
+        81,
+        86,
+        88,
+        110
+      ]
+    }
+  },
+  {
+    "model": "club.trainingsession",
+    "pk": 14,
+    "fields": {
+      "starts_at": "2026-10-02T18:30:00Z",
+      "ends_at": "2026-10-02T20:00:00Z",
+      "gym": 1,
+      "coach": 8,
+      "athletes": [
+        21,
+        24,
+        36,
+        38,
+        41,
+        68,
+        74,
+        75,
+        82,
+        93
+      ]
+    }
+  },
+  {
+    "model": "club.trainingsession",
+    "pk": 15,
+    "fields": {
+      "starts_at": "2026-10-03T17:00:00Z",
+      "ends_at": "2026-10-03T18:00:00Z",
+      "gym": 6,
+      "coach": 6,
+      "athletes": [
+        27,
+        72,
+        78,
+        88,
+        98,
+        103,
+        107,
+        108,
+        111
+      ]
+    }
+  },
+  {
+    "model": "club.trainingsession",
+    "pk": 16,
+    "fields": {
+      "starts_at": "2026-10-05T18:30:00Z",
+      "ends_at": "2026-10-05T19:30:00Z",
+      "gym": 5,
+      "coach": 9,
+      "athletes": [
+        21,
+        32,
+        55,
+        74,
+        83,
+        84,
+        102
+      ]
+    }
+  },
+  {
+    "model": "club.trainingsession",
+    "pk": 17,
+    "fields": {
+      "starts_at": "2026-10-06T11:00:00Z",
+      "ends_at": "2026-10-06T12:30:00Z",
+      "gym": 5,
+      "coach": 7,
+      "athletes": [
+        34,
+        43,
+        63,
+        87,
+        95
+      ]
+    }
+  },
+  {
+    "model": "club.trainingsession",
+    "pk": 18,
+    "fields": {
+      "starts_at": "2026-10-07T09:00:00Z",
+      "ends_at": "2026-10-07T10:30:00Z",
+      "gym": 6,
+      "coach": 8,
+      "athletes": [
+        21,
+        36,
+        38,
+        41,
+        45,
+        60,
+        62,
+        74,
+        75,
+        93
+      ]
+    }
+  },
+  {
+    "model": "club.trainingsession",
+    "pk": 19,
+    "fields": {
+      "starts_at": "2026-10-08T15:00:00Z",
+      "ends_at": "2026-10-08T16:30:00Z",
+      "gym": 4,
+      "coach": 10,
+      "athletes": [
+        19,
+        32,
+        56,
+        65,
+        66,
+        97,
+        101,
+        107,
+        109
+      ]
+    }
+  },
+  {
+    "model": "club.trainingsession",
+    "pk": 20,
+    "fields": {
+      "starts_at": "2026-10-09T15:00:00Z",
+      "ends_at": "2026-10-09T16:00:00Z",
+      "gym": 2,
+      "coach": 11,
+      "athletes": [
+        15,
+        18,
+        22,
+        28,
+        33,
+        35,
+        46,
+        61,
+        65,
+        67,
+        73,
+        91,
+        94,
+        98
+      ]
+    }
+  },
+  {
+    "model": "club.trainingsession",
+    "pk": 21,
+    "fields": {
+      "starts_at": "2026-10-10T17:00:00Z",
+      "ends_at": "2026-10-10T18:00:00Z",
+      "gym": 3,
+      "coach": 11,
+      "athletes": [
+        22,
+        33,
+        35,
+        46,
+        65,
+        67,
+        91,
+        94
+      ]
+    }
+  },
+  {
+    "model": "club.trainingsession",
+    "pk": 22,
+    "fields": {
+      "starts_at": "2026-10-12T15:00:00Z",
+      "ends_at": "2026-10-12T16:30:00Z",
+      "gym": 3,
+      "coach": 6,
+      "athletes": []
+    }
+  },
+  {
+    "model": "club.trainingsession",
+    "pk": 23,
+    "fields": {
+      "starts_at": "2026-10-13T11:00:00Z",
+      "ends_at": "2026-10-13T12:00:00Z",
+      "gym": 4,
+      "coach": 3,
+      "athletes": []
+    }
+  },
+  {
+    "model": "club.trainingsession",
+    "pk": 24,
+    "fields": {
+      "starts_at": "2026-10-14T18:30:00Z",
+      "ends_at": "2026-10-14T20:00:00Z",
+      "gym": 6,
+      "coach": 11,
+      "athletes": []
+    }
+  },
+  {
+    "model": "club.trainingsession",
+    "pk": 25,
+    "fields": {
+      "starts_at": "2026-10-14T09:00:00Z",
+      "ends_at": "2026-10-14T10:30:00Z",
+      "gym": 1,
+      "coach": 8,
+      "athletes": []
+    }
+  },
+  {
+    "model": "club.trainingsession",
+    "pk": 26,
+    "fields": {
+      "starts_at": "2026-10-15T15:00:00Z",
+      "ends_at": "2026-10-15T16:30:00Z",
+      "gym": 1,
+      "coach": 8,
+      "athletes": []
+    }
+  },
+  {
+    "model": "club.trainingsession",
+    "pk": 27,
+    "fields": {
+      "starts_at": "2026-10-15T15:00:00Z",
+      "ends_at": "2026-10-15T16:00:00Z",
+      "gym": 5,
+      "coach": 9,
+      "athletes": []
+    }
+  },
+  {
+    "model": "club.trainingsession",
+    "pk": 28,
+    "fields": {
+      "starts_at": "2026-10-16T09:00:00Z",
+      "ends_at": "2026-10-16T10:30:00Z",
+      "gym": 2,
+      "coach": 4,
+      "athletes": []
+    }
+  },
+  {
+    "model": "club.trainingsession",
+    "pk": 29,
+    "fields": {
+      "starts_at": "2026-10-16T09:00:00Z",
+      "ends_at": "2026-10-16T10:30:00Z",
+      "gym": 5,
+      "coach": 7,
+      "athletes": []
+    }
+  },
+  {
+    "model": "club.trainingsession",
+    "pk": 30,
+    "fields": {
+      "starts_at": "2026-10-17T17:00:00Z",
+      "ends_at": "2026-10-17T18:00:00Z",
+      "gym": 3,
+      "coach": 11,
+      "athletes": []
+    }
+  },
+  {
+    "model": "club.trainingsession",
+    "pk": 31,
+    "fields": {
+      "starts_at": "2026-10-17T09:00:00Z",
+      "ends_at": "2026-10-17T10:30:00Z",
+      "gym": 2,
+      "coach": 2,
+      "athletes": []
+    }
+  },
+  {
+    "model": "club.trainingsession",
+    "pk": 32,
+    "fields": {
+      "starts_at": "2026-10-19T11:00:00Z",
+      "ends_at": "2026-10-19T12:00:00Z",
+      "gym": 1,
+      "coach": 3,
+      "athletes": []
+    }
+  },
+  {
+    "model": "club.trainingsession",
+    "pk": 33,
+    "fields": {
+      "starts_at": "2026-10-20T18:30:00Z",
+      "ends_at": "2026-10-20T20:00:00Z",
+      "gym": 4,
+      "coach": 8,
+      "athletes": []
+    }
+  },
+  {
+    "model": "club.trainingsession",
+    "pk": 34,
+    "fields": {
+      "starts_at": "2026-10-21T17:00:00Z",
+      "ends_at": "2026-10-21T18:00:00Z",
+      "gym": 6,
+      "coach": 8,
+      "athletes": []
+    }
+  },
+  {
+    "model": "club.trainingsession",
+    "pk": 35,
+    "fields": {
+      "starts_at": "2026-10-21T17:00:00Z",
+      "ends_at": "2026-10-21T18:30:00Z",
+      "gym": 4,
+      "coach": 10,
+      "athletes": []
+    }
+  },
+  {
+    "model": "club.trainingsession",
+    "pk": 36,
+    "fields": {
+      "starts_at": "2026-10-22T11:00:00Z",
+      "ends_at": "2026-10-22T12:30:00Z",
+      "gym": 6,
+      "coach": 9,
+      "athletes": []
+    }
+  },
+  {
+    "model": "club.trainingsession",
+    "pk": 37,
+    "fields": {
+      "starts_at": "2026-10-23T09:00:00Z",
+      "ends_at": "2026-10-23T10:30:00Z",
+      "gym": 2,
+      "coach": 4,
+      "athletes": []
+    }
+  },
+  {
+    "model": "club.trainingsession",
+    "pk": 38,
+    "fields": {
+      "starts_at": "2026-10-24T09:00:00Z",
+      "ends_at": "2026-10-24T10:30:00Z",
+      "gym": 6,
+      "coach": 9,
+      "athletes": []
+    }
+  },
+  {
+    "model": "club.trainingsession",
+    "pk": 39,
+    "fields": {
+      "starts_at": "2026-10-24T09:00:00Z",
+      "ends_at": "2026-10-24T10:30:00Z",
+      "gym": 3,
+      "coach": 3,
+      "athletes": []
+    }
+  },
+  {
+    "model": "club.trainingsession",
+    "pk": 40,
+    "fields": {
+      "starts_at": "2026-10-26T18:30:00Z",
+      "ends_at": "2026-10-26T19:30:00Z",
+      "gym": 6,
+      "coach": 8,
+      "athletes": []
+    }
+  },
+  {
+    "model": "club.trainingsession",
+    "pk": 41,
+    "fields": {
+      "starts_at": "2026-10-27T11:00:00Z",
+      "ends_at": "2026-10-27T12:00:00Z",
+      "gym": 3,
+      "coach": 3,
+      "athletes": []
+    }
+  },
+  {
+    "model": "club.trainingsession",
+    "pk": 42,
+    "fields": {
+      "starts_at": "2026-10-28T18:30:00Z",
+      "ends_at": "2026-10-28T19:30:00Z",
+      "gym": 5,
+      "coach": 7,
+      "athletes": []
+    }
+  },
+  {
+    "model": "club.trainingsession",
+    "pk": 43,
+    "fields": {
+      "starts_at": "2026-10-29T18:30:00Z",
+      "ends_at": "2026-10-29T19:30:00Z",
+      "gym": 3,
+      "coach": 3,
+      "athletes": []
+    }
+  },
+  {
+    "model": "club.trainingsession",
+    "pk": 44,
+    "fields": {
+      "starts_at": "2026-10-30T18:30:00Z",
+      "ends_at": "2026-10-30T20:00:00Z",
+      "gym": 2,
+      "coach": 2,
+      "athletes": []
+    }
+  },
+  {
+    "model": "club.trainingsession",
+    "pk": 45,
+    "fields": {
+      "starts_at": "2026-10-31T09:00:00Z",
+      "ends_at": "2026-10-31T10:00:00Z",
+      "gym": 1,
+      "coach": 9,
+      "athletes": []
+    }
+  },
+  {
+    "model": "club.trainingsession",
+    "pk": 46,
+    "fields": {
+      "starts_at": "2026-11-02T18:30:00Z",
+      "ends_at": "2026-11-02T20:00:00Z",
+      "gym": 3,
+      "coach": 3,
+      "athletes": []
+    }
+  },
+  {
+    "model": "club.trainingsession",
+    "pk": 47,
+    "fields": {
+      "starts_at": "2026-11-03T09:00:00Z",
+      "ends_at": "2026-11-03T10:00:00Z",
+      "gym": 2,
+      "coach": 4,
+      "athletes": []
+    }
+  },
+  {
+    "model": "club.trainingsession",
+    "pk": 48,
+    "fields": {
+      "starts_at": "2026-11-04T09:00:00Z",
+      "ends_at": "2026-11-04T10:00:00Z",
+      "gym": 4,
+      "coach": 10,
+      "athletes": []
+    }
+  },
+  {
+    "model": "club.trainingsession",
+    "pk": 49,
+    "fields": {
+      "starts_at": "2026-11-04T15:00:00Z",
+      "ends_at": "2026-11-04T16:00:00Z",
+      "gym": 4,
+      "coach": 8,
+      "athletes": []
+    }
+  },
+  {
+    "model": "club.trainingsession",
+    "pk": 50,
+    "fields": {
+      "starts_at": "2026-11-05T18:30:00Z",
+      "ends_at": "2026-11-05T19:30:00Z",
+      "gym": 5,
+      "coach": 7,
+      "athletes": []
+    }
+  },
+  {
+    "model": "club.trainingsession",
+    "pk": 51,
+    "fields": {
+      "starts_at": "2026-11-06T17:00:00Z",
+      "ends_at": "2026-11-06T18:00:00Z",
+      "gym": 6,
+      "coach": 9,
+      "athletes": []
+    }
+  },
+  {
+    "model": "club.trainingsession",
+    "pk": 52,
+    "fields": {
+      "starts_at": "2026-11-06T17:00:00Z",
+      "ends_at": "2026-11-06T18:30:00Z",
+      "gym": 1,
+      "coach": 8,
+      "athletes": []
+    }
+  },
+  {
+    "model": "club.trainingsession",
+    "pk": 53,
+    "fields": {
+      "starts_at": "2026-11-07T17:00:00Z",
+      "ends_at": "2026-11-07T18:00:00Z",
+      "gym": 1,
+      "coach": 8,
+      "athletes": []
+    }
+  },
+  {
+    "model": "club.trainingsession",
+    "pk": 54,
+    "fields": {
+      "starts_at": "2026-11-07T18:30:00Z",
+      "ends_at": "2026-11-07T19:30:00Z",
+      "gym": 1,
+      "coach": 8,
+      "athletes": []
+    }
+  }
+]

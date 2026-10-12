@@ -39,3 +39,6 @@ pip install -r requirements.txt
 
 # Run the application
 python manage.py runserver
+
+# To load data from fixture
+python manage.py loaddata club_data.json
