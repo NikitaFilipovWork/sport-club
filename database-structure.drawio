@@ -1,0 +1,64 @@
+<mxfile host="app.diagrams.net" modified="2026-10-05T10:00:00.000Z" agent="OpenAI" version="24.7.17" type="device">
+  <diagram id="sport-club-db" name="Database structure">
+    <mxGraphModel dx="1600" dy="1000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1700" pageHeight="1050" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <mxCell id="user" value="&lt;b&gt;club_user&lt;/b&gt;&lt;br&gt;PK id : BIGINT&lt;br&gt;username : VARCHAR(150), UNIQUE&lt;br&gt;password : VARCHAR(128)&lt;br&gt;first_name : VARCHAR(150)&lt;br&gt;last_name : VARCHAR(150)&lt;br&gt;email : VARCHAR(254)&lt;br&gt;role : VARCHAR(10)&lt;br&gt;birth_date : DATE, NULL&lt;br&gt;weight : DOUBLE, NULL&lt;br&gt;is_active : BOOLEAN&lt;br&gt;is_staff : BOOLEAN&lt;br&gt;is_superuser : BOOLEAN&lt;br&gt;last_login : DATETIME, NULL&lt;br&gt;date_joined : DATETIME" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#0052cc;strokeWidth=2;fontColor=#111111;fontSize=14;align=left;verticalAlign=top;spacing=12;" vertex="1" parent="1">
+          <mxGeometry x="40" y="70" width="360" height="380" as="geometry" />
+        </mxCell>
+
+        <mxCell id="gym" value="&lt;b&gt;club_gym&lt;/b&gt;&lt;br&gt;PK id : BIGINT&lt;br&gt;address : VARCHAR(255)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#0052cc;strokeWidth=2;fontColor=#111111;fontSize=14;align=left;verticalAlign=top;spacing=12;" vertex="1" parent="1">
+          <mxGeometry x="520" y="80" width="300" height="120" as="geometry" />
+        </mxCell>
+
+        <mxCell id="session" value="&lt;b&gt;club_trainingsession&lt;/b&gt;&lt;br&gt;PK id : BIGINT&lt;br&gt;starts_at : DATETIME&lt;br&gt;ends_at : DATETIME&lt;br&gt;FK gym_id : BIGINT → club_gym.id&lt;br&gt;FK coach_id : BIGINT → club_user.id" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#0052cc;strokeWidth=2;fontColor=#111111;fontSize=14;align=left;verticalAlign=top;spacing=12;" vertex="1" parent="1">
+          <mxGeometry x="520" y="300" width="360" height="175" as="geometry" />
+        </mxCell>
+
+        <mxCell id="user_coaches" value="&lt;b&gt;club_user_coaches&lt;/b&gt;&lt;br&gt;PK id : BIGINT&lt;br&gt;FK from_user_id : BIGINT → club_user.id&lt;br&gt;FK to_user_id : BIGINT → club_user.id&lt;br&gt;UNIQUE (from_user_id, to_user_id)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff9df;strokeColor=#e0ad00;strokeWidth=2;fontColor=#111111;fontSize=14;align=left;verticalAlign=top;spacing=12;" vertex="1" parent="1">
+          <mxGeometry x="40" y="600" width="370" height="145" as="geometry" />
+        </mxCell>
+
+        <mxCell id="gym_coaches" value="&lt;b&gt;club_gym_coaches&lt;/b&gt;&lt;br&gt;PK id : BIGINT&lt;br&gt;FK gym_id : BIGINT → club_gym.id&lt;br&gt;FK user_id : BIGINT → club_user.id&lt;br&gt;UNIQUE (gym_id, user_id)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff9df;strokeColor=#e0ad00;strokeWidth=2;fontColor=#111111;fontSize=14;align=left;verticalAlign=top;spacing=12;" vertex="1" parent="1">
+          <mxGeometry x="480" y="600" width="350" height="145" as="geometry" />
+        </mxCell>
+
+        <mxCell id="session_athletes" value="&lt;b&gt;club_trainingsession_athletes&lt;/b&gt;&lt;br&gt;PK id : BIGINT&lt;br&gt;FK trainingsession_id : BIGINT → club_trainingsession.id&lt;br&gt;FK user_id : BIGINT → club_user.id&lt;br&gt;UNIQUE (trainingsession_id, user_id)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff9df;strokeColor=#e0ad00;strokeWidth=2;fontColor=#111111;fontSize=14;align=left;verticalAlign=top;spacing=12;" vertex="1" parent="1">
+          <mxGeometry x="900" y="600" width="390" height="145" as="geometry" />
+        </mxCell>
+
+        <mxCell id="note" value="&lt;b&gt;Relationships&lt;/b&gt;&lt;br&gt;User 1 : N TrainingSession — coach_id&lt;br&gt;Gym 1 : N TrainingSession — gym_id&lt;br&gt;User M : N User — coaches&lt;br&gt;Gym M : N User — coaches&lt;br&gt;TrainingSession M : N User — athletes&lt;br&gt;&lt;br&gt;&lt;b&gt;User fields&lt;/b&gt;&lt;br&gt;club_user extends Django AbstractUser. The listed authentication fields are inherited. Django-managed group and permission tables are not expanded in this application diagram." style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;fillColor=#ffffff;strokeColor=#111111;fontColor=#111111;fontSize=14;align=left;verticalAlign=top;spacing=12;size=18;" vertex="1" parent="1">
+          <mxGeometry x="1030" y="80" width="500" height="350" as="geometry" />
+        </mxCell>
+
+        <mxCell id="e_user_session" value="coach_id · 1:N" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#0052cc;strokeWidth=2;endArrow=block;endFill=1;fontColor=#111111;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="user" target="session">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_gym_session" value="gym_id · 1:N" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#0052cc;strokeWidth=2;endArrow=block;endFill=1;fontColor=#111111;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="gym" target="session">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_user_usercoaches" value="two user FKs" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#0052cc;strokeWidth=2;endArrow=block;endFill=1;fontColor=#111111;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="user" target="user_coaches">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_user_gymcoaches" value="user_id · 1:N" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#0052cc;strokeWidth=2;endArrow=block;endFill=1;fontColor=#111111;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="user" target="gym_coaches">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_gym_gymcoaches" value="gym_id · 1:N" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#0052cc;strokeWidth=2;endArrow=block;endFill=1;fontColor=#111111;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="gym" target="gym_coaches">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_user_sessionathletes" value="user_id · 1:N" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#0052cc;strokeWidth=2;endArrow=block;endFill=1;fontColor=#111111;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="user" target="session_athletes">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_session_sessionathletes" value="session_id · 1:N" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#0052cc;strokeWidth=2;endArrow=block;endFill=1;fontColor=#111111;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="session" target="session_athletes">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="legend" value="PK — primary key   ·   FK — foreign key   ·   1:N — one-to-many   ·   M:N — many-to-many" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#111111;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="40" y="820" width="900" height="35" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

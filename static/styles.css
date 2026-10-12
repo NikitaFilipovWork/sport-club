@@ -1,0 +1,44 @@
+:root {
+    --club-navy: #080808;
+    --club-blue: #0052cc;
+    --club-yellow: #ffcc00;
+    --club-page: #ffffff;
+    --club-line: #d9e0e8;
+    --club-muted: #5f6b7a;
+}
+
+body { background: var(--club-page); color: #111111; }
+.app-shell { min-height: 100vh; }
+.app-main { min-width: 0; padding: 30px clamp(16px, 3vw, 42px) !important; }
+.app-content { width: 100%; max-width: 1440px; margin: 0 auto; }
+.club-sidebar { flex: 0 0 250px; width: 250px; min-height: 100vh; background: #080808; }
+.club-brand { color: #fff; font-weight: 750; line-height: 1.35; }
+.club-nav .nav-link { color: #ffffff; border-radius: 8px; padding: 10px 12px; }
+.club-nav .nav-link:hover, .club-nav .nav-link.active { color: #080808; background: var(--club-yellow); }
+.club-nav svg, .club-account svg { vertical-align: -2px; margin-right: 8px; }
+.club-account .nav-link, .club-account button { color: #ffffff; border-radius: 8px; padding: 9px 12px; text-decoration: none; }
+.club-account .nav-link:hover, .club-account button:hover { color: #080808; background: var(--club-yellow) !important; }
+.page-kicker { color: var(--club-blue); font-size: .75rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; margin: 0 0 5px; }
+.page-title { color: #111111; font-weight: 750; letter-spacing: -.035em; }
+.page-subtitle { color: var(--club-muted); margin: 0; }
+.surface { background: #fff; border: 1px solid var(--club-line); border-radius: 12px; }
+.surface-muted { background: #ffffff; border: 1px solid var(--club-line); border-radius: 12px; }
+.table { --bs-table-hover-bg: #fff9df; }
+.table thead th { color: #111111; font-size: .77rem; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; white-space: nowrap; }
+.table td, .table th { padding: .85rem .75rem; }
+.btn-primary { background-color: var(--club-blue); border-color: var(--club-blue); color: #ffffff; }
+.btn-primary:hover, .btn-primary:focus { background-color: #003f9e; border-color: #003f9e; color: #ffffff; }
+.btn-warning { background: var(--club-yellow); border-color: var(--club-yellow); color: #111111; }
+.btn-warning:hover { background: #e6b800; border-color: #e6b800; color: #111111; }
+.form-control:focus, .form-select:focus, .form-check-input:focus { border-color: var(--club-blue); box-shadow: 0 0 0 .2rem rgba(0,82,204,.18); }
+.pagination { margin-top: 18px; }
+.page-link { color: var(--club-blue); }
+.page-item.active .page-link { background: var(--club-blue); border-color: var(--club-blue); }
+
+@media (max-width: 767.98px) {
+    .app-shell { flex-direction: column; }
+    .club-sidebar { flex-basis: auto; width: 100%; min-height: 0 !important; }
+    .club-sidebar .club-nav { flex-direction: row !important; flex-wrap: wrap; gap: 4px; }
+    .club-sidebar hr:last-of-type { display: none; }
+    .app-main { padding-top: 22px !important; }
+}
