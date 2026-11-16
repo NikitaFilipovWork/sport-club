@@ -2,31 +2,27 @@ from typing import Any
 
 from django.contrib import messages
 from django.contrib.auth.mixins import LoginRequiredMixin
-from django.db.models import Q
-from django.http import HttpRequest, HttpResponse
-from django.shortcuts import render, redirect
+from django.db.models import ProtectedError
+from django.shortcuts import redirect
 from django.urls import reverse_lazy
 from django.views import generic
 
-from club.forms import UserForm, GymForm, TrainingSessionForm, UserFormUpdate, AthleteModelSearchForm, \
+from club.forms import UserForm, SignUpForm,GymForm, TrainingSessionForm, UserFormUpdate, AthleteModelSearchForm, \
     CoachModelSearchForm, GymModelSearchForm
 from club.models import User, Gym, TrainingSession
 
 
-def index(request:HttpRequest) -> HttpResponse:
-    total_coaches = User.objects.filter(role=User.Role.COACH).count()
-    total_athletes = User.objects.filter(role=User.Role.ATHLETE).count()
-    total_gyms = Gym.objects.all().count()
-    context = {
-        "total_coaches": total_coaches,
-        "total_athletes": total_athletes,
-        "total_gyms": total_gyms,
-    }
+class IndexView(generic.TemplateView):
+    template_name = "club/index.html"
 
-    return render(request, template_name="club/index.html", context=context)
+    def get_context_data(self, **kwargs: Any) -> dict[str, Any]:
+        context = super().get_context_data(**kwargs)
+        context["total_coaches"] = User.objects.filter(role=User.Role.COACH).count()
+        context["total_athletes"] = User.objects.filter(role=User.Role.ATHLETE).count()
+        context["total_gyms"] = Gym.objects.count()
 
+        return context
 
-# <---------------------------Athlete-------------------------------->
 
 class AthleteListView(generic.ListView):
     model = User
@@ -61,37 +57,23 @@ class AthleteListView(generic.ListView):
 
 class AthleteCreateView(LoginRequiredMixin, generic.CreateView):
     model = User
-    form_class = UserForm
+    form_class = SignUpForm
     success_url = reverse_lazy("club:athletes-list")
 
     def get_context_data(self, **kwargs: Any) -> dict[str, Any]:
         context = super().get_context_data(**kwargs)
         context["can_create_athlete"] = (
                 self.request.user.is_authenticated
-                and (self.request.user == self.object.coach or self.request.user.is_staff)
+                and (self.request.user.is_coach or self.request.user.is_staff)
         )
 
         return context
-
-    def post(self, request, *args, **kwargs):
-        session = self.get_object()
-
-        if not (
-                request.user.is_authenticated
-                and (request.user == session.coach or request.user.is_staff)
-        ):
-            messages.error(request, "You have not enough rights(")
-            return redirect(request.path)
-
-
-
-        messages.success(request, "Saved")
-        return redirect(request.path)
 
 
 
 class AthleteUpdateView(LoginRequiredMixin, generic.UpdateView):
     model = User
+    queryset = User.objects.filter(role=User.Role.ATHLETE)
     form_class = UserFormUpdate
     success_url = reverse_lazy("club:athletes-list")
 
@@ -109,10 +91,8 @@ class AthleteDetailView(generic.DetailView):
 
 class AthleteDeleteView(LoginRequiredMixin, generic.DeleteView):
     model = User
+    queryset = User.objects.filter(role=User.Role.ATHLETE)
     success_url = reverse_lazy("club:athletes-list")
-
-
-# <---------------------------Coach-------------------------------->
 
 
 class CoachListView(generic.ListView):
@@ -144,14 +124,9 @@ class CoachListView(generic.ListView):
         return context
 
 
-class CoachCreateView(LoginRequiredMixin, generic.CreateView):
-    model = User
-    form_class = UserForm
-    success_url = reverse_lazy("club:coaches-list")
-
-
 class CoachUpdateView(LoginRequiredMixin, generic.UpdateView):
     model = User
+    queryset = User.objects.filter(role=User.Role.COACH)
     form_class = UserFormUpdate
     success_url = reverse_lazy("club:coaches-list")
 
@@ -169,10 +144,15 @@ class CoachDetailView(generic.DetailView):
 
 class CoachDeleteView(LoginRequiredMixin, generic.DeleteView):
     model = User
+    queryset = User.objects.filter(role=User.Role.COACH)
     success_url = reverse_lazy("club:coaches-list")
 
-
-# <---------------------------Gym-------------------------------->
+    def form_valid(self, form):
+        try:
+            return super().form_valid(form)
+        except ProtectedError:
+            messages.error(self.request, "Can't delete a coach who has training sessions.")
+            return redirect("club:coach-detail", pk=self.object.pk)
 
 
 class GymListView(generic.ListView):
@@ -218,7 +198,10 @@ class GymUpdateView(LoginRequiredMixin, generic.UpdateView):
         context = super().get_context_data(**kwargs)
         context["can_update_gym"] = (
             self.request.user.is_authenticated
-            and (self.request.user == self.object.coach or self.request.user.is_staff)
+            and (
+                self.object.coaches.filter(pk=self.request.user.pk).exists()
+                or self.request.user.is_staff
+            )
         )
 
         return context
@@ -236,8 +219,12 @@ class GymDeleteView(LoginRequiredMixin, generic.DeleteView):
     model = Gym
     success_url = reverse_lazy("club:gyms-list")
 
-
-# <---------------------------TrainingSession-------------------------------->
+    def form_valid(self, form):
+        try:
+            return super().form_valid(form)
+        except ProtectedError:
+            messages.error(self.request, "Can't delete a gym that has training sessions.")
+            return redirect("club:gym-detail", pk=self.object.pk)
 
 
 class TrainingSessionListView(generic.ListView):
@@ -303,6 +290,6 @@ class TrainingSessionDeleteView(LoginRequiredMixin, generic.DeleteView):
 
 
 class SignUpView(generic.CreateView):
-    form_class = UserForm
+    form_class = SignUpForm
     success_url = reverse_lazy("club:login")
     template_name = "registration/signup.html"

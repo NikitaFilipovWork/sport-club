@@ -3,7 +3,7 @@
     "model": "club.user",
     "pk": 2,
     "fields": {
-      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "password": "pbkdf2_sha256$1500000$YlDMqlmM5Nlohu0T2oV5UX$REbJ0AmMlNfjpAzwNGBqOBg5fj2DpsTbQu6nSRHb1JE=",
       "last_login": null,
       "is_superuser": false,
       "username": "ivan.petrenko",
@@ -25,7 +25,7 @@
     "model": "club.user",
     "pk": 3,
     "fields": {
-      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "password": "pbkdf2_sha256$1500000$YlDMqlmM5Nlohu0T2oV5UX$REbJ0AmMlNfjpAzwNGBqOBg5fj2DpsTbQu6nSRHb1JE=",
       "last_login": null,
       "is_superuser": false,
       "username": "olena.shevchenko",
@@ -47,7 +47,7 @@
     "model": "club.user",
     "pk": 4,
     "fields": {
-      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "password": "pbkdf2_sha256$1500000$YlDMqlmM5Nlohu0T2oV5UX$REbJ0AmMlNfjpAzwNGBqOBg5fj2DpsTbQu6nSRHb1JE=",
       "last_login": null,
       "is_superuser": false,
       "username": "taras.kravchenko",
@@ -69,7 +69,7 @@
     "model": "club.user",
     "pk": 5,
     "fields": {
-      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "password": "pbkdf2_sha256$1500000$YlDMqlmM5Nlohu0T2oV5UX$REbJ0AmMlNfjpAzwNGBqOBg5fj2DpsTbQu6nSRHb1JE=",
       "last_login": null,
       "is_superuser": false,
       "username": "iryna.moroz",
@@ -91,7 +91,7 @@
     "model": "club.user",
     "pk": 6,
     "fields": {
-      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "password": "pbkdf2_sha256$1500000$YlDMqlmM5Nlohu0T2oV5UX$REbJ0AmMlNfjpAzwNGBqOBg5fj2DpsTbQu6nSRHb1JE=",
       "last_login": null,
       "is_superuser": false,
       "username": "serhiy.boyko",
@@ -113,7 +113,7 @@
     "model": "club.user",
     "pk": 7,
     "fields": {
-      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "password": "pbkdf2_sha256$1500000$YlDMqlmM5Nlohu0T2oV5UX$REbJ0AmMlNfjpAzwNGBqOBg5fj2DpsTbQu6nSRHb1JE=",
       "last_login": null,
       "is_superuser": false,
       "username": "natalia.marchenko",
@@ -135,7 +135,7 @@
     "model": "club.user",
     "pk": 8,
     "fields": {
-      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "password": "pbkdf2_sha256$1500000$YlDMqlmM5Nlohu0T2oV5UX$REbJ0AmMlNfjpAzwNGBqOBg5fj2DpsTbQu6nSRHb1JE=",
       "last_login": null,
       "is_superuser": false,
       "username": "roman.polishchuk",
@@ -157,7 +157,7 @@
     "model": "club.user",
     "pk": 9,
     "fields": {
-      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "password": "pbkdf2_sha256$1500000$YlDMqlmM5Nlohu0T2oV5UX$REbJ0AmMlNfjpAzwNGBqOBg5fj2DpsTbQu6nSRHb1JE=",
       "last_login": null,
       "is_superuser": false,
       "username": "oksana.rudenko",
@@ -179,7 +179,7 @@
     "model": "club.user",
     "pk": 10,
     "fields": {
-      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "password": "pbkdf2_sha256$1500000$YlDMqlmM5Nlohu0T2oV5UX$REbJ0AmMlNfjpAzwNGBqOBg5fj2DpsTbQu6nSRHb1JE=",
       "last_login": null,
       "is_superuser": false,
       "username": "maksym.oliynyk",
@@ -201,7 +201,7 @@
     "model": "club.user",
     "pk": 11,
     "fields": {
-      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "password": "pbkdf2_sha256$1500000$YlDMqlmM5Nlohu0T2oV5UX$REbJ0AmMlNfjpAzwNGBqOBg5fj2DpsTbQu6nSRHb1JE=",
       "last_login": null,
       "is_superuser": false,
       "username": "halyna.zinchenko",
@@ -223,7 +223,7 @@
     "model": "club.user",
     "pk": 12,
     "fields": {
-      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "password": "pbkdf2_sha256$1500000$YlDMqlmM5Nlohu0T2oV5UX$REbJ0AmMlNfjpAzwNGBqOBg5fj2DpsTbQu6nSRHb1JE=",
       "last_login": null,
       "is_superuser": false,
       "username": "yaroslav.kovalchuk",
@@ -247,7 +247,7 @@
     "model": "club.user",
     "pk": 13,
     "fields": {
-      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "password": "pbkdf2_sha256$1500000$YlDMqlmM5Nlohu0T2oV5UX$REbJ0AmMlNfjpAzwNGBqOBg5fj2DpsTbQu6nSRHb1JE=",
       "last_login": null,
       "is_superuser": false,
       "username": "anna.shevchenko",
@@ -271,7 +271,7 @@
     "model": "club.user",
     "pk": 14,
     "fields": {
-      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "password": "pbkdf2_sha256$1500000$YlDMqlmM5Nlohu0T2oV5UX$REbJ0AmMlNfjpAzwNGBqOBg5fj2DpsTbQu6nSRHb1JE=",
       "last_login": null,
       "is_superuser": false,
       "username": "alina.polishchuk",
@@ -295,7 +295,7 @@
     "model": "club.user",
     "pk": 15,
     "fields": {
-      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "password": "pbkdf2_sha256$1500000$YlDMqlmM5Nlohu0T2oV5UX$REbJ0AmMlNfjpAzwNGBqOBg5fj2DpsTbQu6nSRHb1JE=",
       "last_login": null,
       "is_superuser": false,
       "username": "tetiana.melnyk",
@@ -319,7 +319,7 @@
     "model": "club.user",
     "pk": 16,
     "fields": {
-      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "password": "pbkdf2_sha256$1500000$YlDMqlmM5Nlohu0T2oV5UX$REbJ0AmMlNfjpAzwNGBqOBg5fj2DpsTbQu6nSRHb1JE=",
       "last_login": null,
       "is_superuser": false,
       "username": "dmytro.zinchenko",
@@ -343,7 +343,7 @@
     "model": "club.user",
     "pk": 17,
     "fields": {
-      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "password": "pbkdf2_sha256$1500000$YlDMqlmM5Nlohu0T2oV5UX$REbJ0AmMlNfjpAzwNGBqOBg5fj2DpsTbQu6nSRHb1JE=",
       "last_login": null,
       "is_superuser": false,
       "username": "roman.kravchenko",
@@ -367,7 +367,7 @@
     "model": "club.user",
     "pk": 18,
     "fields": {
-      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "password": "pbkdf2_sha256$1500000$YlDMqlmM5Nlohu0T2oV5UX$REbJ0AmMlNfjpAzwNGBqOBg5fj2DpsTbQu6nSRHb1JE=",
       "last_login": null,
       "is_superuser": false,
       "username": "daryna.danylenko",
@@ -391,7 +391,7 @@
     "model": "club.user",
     "pk": 19,
     "fields": {
-      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "password": "pbkdf2_sha256$1500000$YlDMqlmM5Nlohu0T2oV5UX$REbJ0AmMlNfjpAzwNGBqOBg5fj2DpsTbQu6nSRHb1JE=",
       "last_login": null,
       "is_superuser": false,
       "username": "yaroslav.lysenko",
@@ -415,7 +415,7 @@
     "model": "club.user",
     "pk": 20,
     "fields": {
-      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "password": "pbkdf2_sha256$1500000$YlDMqlmM5Nlohu0T2oV5UX$REbJ0AmMlNfjpAzwNGBqOBg5fj2DpsTbQu6nSRHb1JE=",
       "last_login": null,
       "is_superuser": false,
       "username": "dmytro.petrenko",
@@ -439,7 +439,7 @@
     "model": "club.user",
     "pk": 21,
     "fields": {
-      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "password": "pbkdf2_sha256$1500000$YlDMqlmM5Nlohu0T2oV5UX$REbJ0AmMlNfjpAzwNGBqOBg5fj2DpsTbQu6nSRHb1JE=",
       "last_login": null,
       "is_superuser": false,
       "username": "diana.danylenko",
@@ -464,7 +464,7 @@
     "model": "club.user",
     "pk": 22,
     "fields": {
-      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "password": "pbkdf2_sha256$1500000$YlDMqlmM5Nlohu0T2oV5UX$REbJ0AmMlNfjpAzwNGBqOBg5fj2DpsTbQu6nSRHb1JE=",
       "last_login": null,
       "is_superuser": false,
       "username": "yulia.klymenko",
@@ -488,7 +488,7 @@
     "model": "club.user",
     "pk": 23,
     "fields": {
-      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "password": "pbkdf2_sha256$1500000$YlDMqlmM5Nlohu0T2oV5UX$REbJ0AmMlNfjpAzwNGBqOBg5fj2DpsTbQu6nSRHb1JE=",
       "last_login": null,
       "is_superuser": false,
       "username": "roman.polishchuk2",
@@ -512,7 +512,7 @@
     "model": "club.user",
     "pk": 24,
     "fields": {
-      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "password": "pbkdf2_sha256$1500000$YlDMqlmM5Nlohu0T2oV5UX$REbJ0AmMlNfjpAzwNGBqOBg5fj2DpsTbQu6nSRHb1JE=",
       "last_login": null,
       "is_superuser": false,
       "username": "sofia.tkachenko",
@@ -536,7 +536,7 @@
     "model": "club.user",
     "pk": 25,
     "fields": {
-      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "password": "pbkdf2_sha256$1500000$YlDMqlmM5Nlohu0T2oV5UX$REbJ0AmMlNfjpAzwNGBqOBg5fj2DpsTbQu6nSRHb1JE=",
       "last_login": null,
       "is_superuser": false,
       "username": "polina.kovalchuk",
@@ -560,7 +560,7 @@
     "model": "club.user",
     "pk": 26,
     "fields": {
-      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "password": "pbkdf2_sha256$1500000$YlDMqlmM5Nlohu0T2oV5UX$REbJ0AmMlNfjpAzwNGBqOBg5fj2DpsTbQu6nSRHb1JE=",
       "last_login": null,
       "is_superuser": false,
       "username": "artem.tkachenko",
@@ -584,7 +584,7 @@
     "model": "club.user",
     "pk": 27,
     "fields": {
-      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "password": "pbkdf2_sha256$1500000$YlDMqlmM5Nlohu0T2oV5UX$REbJ0AmMlNfjpAzwNGBqOBg5fj2DpsTbQu6nSRHb1JE=",
       "last_login": null,
       "is_superuser": false,
       "username": "volodymyr.oliynyk",
@@ -608,7 +608,7 @@
     "model": "club.user",
     "pk": 28,
     "fields": {
-      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "password": "pbkdf2_sha256$1500000$YlDMqlmM5Nlohu0T2oV5UX$REbJ0AmMlNfjpAzwNGBqOBg5fj2DpsTbQu6nSRHb1JE=",
       "last_login": null,
       "is_superuser": false,
       "username": "maksym.polishchuk",
@@ -632,7 +632,7 @@
     "model": "club.user",
     "pk": 29,
     "fields": {
-      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "password": "pbkdf2_sha256$1500000$YlDMqlmM5Nlohu0T2oV5UX$REbJ0AmMlNfjpAzwNGBqOBg5fj2DpsTbQu6nSRHb1JE=",
       "last_login": null,
       "is_superuser": false,
       "username": "ivan.polishchuk",
@@ -656,7 +656,7 @@
     "model": "club.user",
     "pk": 30,
     "fields": {
-      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "password": "pbkdf2_sha256$1500000$YlDMqlmM5Nlohu0T2oV5UX$REbJ0AmMlNfjpAzwNGBqOBg5fj2DpsTbQu6nSRHb1JE=",
       "last_login": null,
       "is_superuser": false,
       "username": "diana.melnyk",
@@ -681,7 +681,7 @@
     "model": "club.user",
     "pk": 31,
     "fields": {
-      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "password": "pbkdf2_sha256$1500000$YlDMqlmM5Nlohu0T2oV5UX$REbJ0AmMlNfjpAzwNGBqOBg5fj2DpsTbQu6nSRHb1JE=",
       "last_login": null,
       "is_superuser": false,
       "username": "vira.shevchuk",
@@ -706,7 +706,7 @@
     "model": "club.user",
     "pk": 32,
     "fields": {
-      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "password": "pbkdf2_sha256$1500000$YlDMqlmM5Nlohu0T2oV5UX$REbJ0AmMlNfjpAzwNGBqOBg5fj2DpsTbQu6nSRHb1JE=",
       "last_login": null,
       "is_superuser": false,
       "username": "roman.zinchenko",
@@ -731,7 +731,7 @@
     "model": "club.user",
     "pk": 33,
     "fields": {
-      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "password": "pbkdf2_sha256$1500000$YlDMqlmM5Nlohu0T2oV5UX$REbJ0AmMlNfjpAzwNGBqOBg5fj2DpsTbQu6nSRHb1JE=",
       "last_login": null,
       "is_superuser": false,
       "username": "kateryna.moroz",
@@ -755,7 +755,7 @@
     "model": "club.user",
     "pk": 34,
     "fields": {
-      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "password": "pbkdf2_sha256$1500000$YlDMqlmM5Nlohu0T2oV5UX$REbJ0AmMlNfjpAzwNGBqOBg5fj2DpsTbQu6nSRHb1JE=",
       "last_login": null,
       "is_superuser": false,
       "username": "sofia.petrenko",
@@ -779,7 +779,7 @@
     "model": "club.user",
     "pk": 35,
     "fields": {
-      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "password": "pbkdf2_sha256$1500000$YlDMqlmM5Nlohu0T2oV5UX$REbJ0AmMlNfjpAzwNGBqOBg5fj2DpsTbQu6nSRHb1JE=",
       "last_login": null,
       "is_superuser": false,
       "username": "volodymyr.zinchenko",
@@ -803,7 +803,7 @@
     "model": "club.user",
     "pk": 36,
     "fields": {
-      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "password": "pbkdf2_sha256$1500000$YlDMqlmM5Nlohu0T2oV5UX$REbJ0AmMlNfjpAzwNGBqOBg5fj2DpsTbQu6nSRHb1JE=",
       "last_login": null,
       "is_superuser": false,
       "username": "mykyta.rudenko",
@@ -827,7 +827,7 @@
     "model": "club.user",
     "pk": 37,
     "fields": {
-      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "password": "pbkdf2_sha256$1500000$YlDMqlmM5Nlohu0T2oV5UX$REbJ0AmMlNfjpAzwNGBqOBg5fj2DpsTbQu6nSRHb1JE=",
       "last_login": null,
       "is_superuser": false,
       "username": "halyna.klymenko",
@@ -851,7 +851,7 @@
     "model": "club.user",
     "pk": 38,
     "fields": {
-      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "password": "pbkdf2_sha256$1500000$YlDMqlmM5Nlohu0T2oV5UX$REbJ0AmMlNfjpAzwNGBqOBg5fj2DpsTbQu6nSRHb1JE=",
       "last_login": null,
       "is_superuser": false,
       "username": "ivan.petrenko2",
@@ -876,7 +876,7 @@
     "model": "club.user",
     "pk": 39,
     "fields": {
-      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "password": "pbkdf2_sha256$1500000$YlDMqlmM5Nlohu0T2oV5UX$REbJ0AmMlNfjpAzwNGBqOBg5fj2DpsTbQu6nSRHb1JE=",
       "last_login": null,
       "is_superuser": false,
       "username": "yulia.melnyk",
@@ -900,7 +900,7 @@
     "model": "club.user",
     "pk": 40,
     "fields": {
-      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "password": "pbkdf2_sha256$1500000$YlDMqlmM5Nlohu0T2oV5UX$REbJ0AmMlNfjpAzwNGBqOBg5fj2DpsTbQu6nSRHb1JE=",
       "last_login": null,
       "is_superuser": false,
       "username": "oleh.vasylenko",
@@ -924,7 +924,7 @@
     "model": "club.user",
     "pk": 41,
     "fields": {
-      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "password": "pbkdf2_sha256$1500000$YlDMqlmM5Nlohu0T2oV5UX$REbJ0AmMlNfjpAzwNGBqOBg5fj2DpsTbQu6nSRHb1JE=",
       "last_login": null,
       "is_superuser": false,
       "username": "roman.bondar",
@@ -948,7 +948,7 @@
     "model": "club.user",
     "pk": 42,
     "fields": {
-      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "password": "pbkdf2_sha256$1500000$YlDMqlmM5Nlohu0T2oV5UX$REbJ0AmMlNfjpAzwNGBqOBg5fj2DpsTbQu6nSRHb1JE=",
       "last_login": null,
       "is_superuser": false,
       "username": "vlad.boyko",
@@ -973,7 +973,7 @@
     "model": "club.user",
     "pk": 43,
     "fields": {
-      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "password": "pbkdf2_sha256$1500000$YlDMqlmM5Nlohu0T2oV5UX$REbJ0AmMlNfjpAzwNGBqOBg5fj2DpsTbQu6nSRHb1JE=",
       "last_login": null,
       "is_superuser": false,
       "username": "sofia.bondarenko",
@@ -997,7 +997,7 @@
     "model": "club.user",
     "pk": 44,
     "fields": {
-      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "password": "pbkdf2_sha256$1500000$YlDMqlmM5Nlohu0T2oV5UX$REbJ0AmMlNfjpAzwNGBqOBg5fj2DpsTbQu6nSRHb1JE=",
       "last_login": null,
       "is_superuser": false,
       "username": "vira.oliynyk",
@@ -1021,7 +1021,7 @@
     "model": "club.user",
     "pk": 45,
     "fields": {
-      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "password": "pbkdf2_sha256$1500000$YlDMqlmM5Nlohu0T2oV5UX$REbJ0AmMlNfjpAzwNGBqOBg5fj2DpsTbQu6nSRHb1JE=",
       "last_login": null,
       "is_superuser": false,
       "username": "iryna.melnyk",
@@ -1045,7 +1045,7 @@
     "model": "club.user",
     "pk": 46,
     "fields": {
-      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "password": "pbkdf2_sha256$1500000$YlDMqlmM5Nlohu0T2oV5UX$REbJ0AmMlNfjpAzwNGBqOBg5fj2DpsTbQu6nSRHb1JE=",
       "last_login": null,
       "is_superuser": false,
       "username": "anton.petrenko",
@@ -1069,7 +1069,7 @@
     "model": "club.user",
     "pk": 47,
     "fields": {
-      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "password": "pbkdf2_sha256$1500000$YlDMqlmM5Nlohu0T2oV5UX$REbJ0AmMlNfjpAzwNGBqOBg5fj2DpsTbQu6nSRHb1JE=",
       "last_login": null,
       "is_superuser": false,
       "username": "diana.bondarenko",
@@ -1093,7 +1093,7 @@
     "model": "club.user",
     "pk": 48,
     "fields": {
-      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "password": "pbkdf2_sha256$1500000$YlDMqlmM5Nlohu0T2oV5UX$REbJ0AmMlNfjpAzwNGBqOBg5fj2DpsTbQu6nSRHb1JE=",
       "last_login": null,
       "is_superuser": false,
       "username": "tetiana.savchenko",
@@ -1117,7 +1117,7 @@
     "model": "club.user",
     "pk": 49,
     "fields": {
-      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "password": "pbkdf2_sha256$1500000$YlDMqlmM5Nlohu0T2oV5UX$REbJ0AmMlNfjpAzwNGBqOBg5fj2DpsTbQu6nSRHb1JE=",
       "last_login": null,
       "is_superuser": false,
       "username": "oleh.kovalenko",
@@ -1141,7 +1141,7 @@
     "model": "club.user",
     "pk": 50,
     "fields": {
-      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "password": "pbkdf2_sha256$1500000$YlDMqlmM5Nlohu0T2oV5UX$REbJ0AmMlNfjpAzwNGBqOBg5fj2DpsTbQu6nSRHb1JE=",
       "last_login": null,
       "is_superuser": false,
       "username": "daryna.savchenko",
@@ -1165,7 +1165,7 @@
     "model": "club.user",
     "pk": 51,
     "fields": {
-      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "password": "pbkdf2_sha256$1500000$YlDMqlmM5Nlohu0T2oV5UX$REbJ0AmMlNfjpAzwNGBqOBg5fj2DpsTbQu6nSRHb1JE=",
       "last_login": null,
       "is_superuser": false,
       "username": "halyna.shevchuk",
@@ -1189,7 +1189,7 @@
     "model": "club.user",
     "pk": 52,
     "fields": {
-      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "password": "pbkdf2_sha256$1500000$YlDMqlmM5Nlohu0T2oV5UX$REbJ0AmMlNfjpAzwNGBqOBg5fj2DpsTbQu6nSRHb1JE=",
       "last_login": null,
       "is_superuser": false,
       "username": "ivan.savchenko",
@@ -1213,7 +1213,7 @@
     "model": "club.user",
     "pk": 53,
     "fields": {
-      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "password": "pbkdf2_sha256$1500000$YlDMqlmM5Nlohu0T2oV5UX$REbJ0AmMlNfjpAzwNGBqOBg5fj2DpsTbQu6nSRHb1JE=",
       "last_login": null,
       "is_superuser": false,
       "username": "polina.shevchenko",
@@ -1237,7 +1237,7 @@
     "model": "club.user",
     "pk": 54,
     "fields": {
-      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "password": "pbkdf2_sha256$1500000$YlDMqlmM5Nlohu0T2oV5UX$REbJ0AmMlNfjpAzwNGBqOBg5fj2DpsTbQu6nSRHb1JE=",
       "last_login": null,
       "is_superuser": false,
       "username": "dmytro.melnyk",
@@ -1261,7 +1261,7 @@
     "model": "club.user",
     "pk": 55,
     "fields": {
-      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "password": "pbkdf2_sha256$1500000$YlDMqlmM5Nlohu0T2oV5UX$REbJ0AmMlNfjpAzwNGBqOBg5fj2DpsTbQu6nSRHb1JE=",
       "last_login": null,
       "is_superuser": false,
       "username": "anna.pavlenko",
@@ -1285,7 +1285,7 @@
     "model": "club.user",
     "pk": 56,
     "fields": {
-      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "password": "pbkdf2_sha256$1500000$YlDMqlmM5Nlohu0T2oV5UX$REbJ0AmMlNfjpAzwNGBqOBg5fj2DpsTbQu6nSRHb1JE=",
       "last_login": null,
       "is_superuser": false,
       "username": "yuriy.kovalenko",
@@ -1309,7 +1309,7 @@
     "model": "club.user",
     "pk": 57,
     "fields": {
-      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "password": "pbkdf2_sha256$1500000$YlDMqlmM5Nlohu0T2oV5UX$REbJ0AmMlNfjpAzwNGBqOBg5fj2DpsTbQu6nSRHb1JE=",
       "last_login": null,
       "is_superuser": false,
       "username": "anton.shevchuk",
@@ -1333,7 +1333,7 @@
     "model": "club.user",
     "pk": 58,
     "fields": {
-      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "password": "pbkdf2_sha256$1500000$YlDMqlmM5Nlohu0T2oV5UX$REbJ0AmMlNfjpAzwNGBqOBg5fj2DpsTbQu6nSRHb1JE=",
       "last_login": null,
       "is_superuser": false,
       "username": "sofia.polishchuk",
@@ -1357,7 +1357,7 @@
     "model": "club.user",
     "pk": 59,
     "fields": {
-      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "password": "pbkdf2_sha256$1500000$YlDMqlmM5Nlohu0T2oV5UX$REbJ0AmMlNfjpAzwNGBqOBg5fj2DpsTbQu6nSRHb1JE=",
       "last_login": null,
       "is_superuser": false,
       "username": "pavlo.hrytsenko",
@@ -1381,7 +1381,7 @@
     "model": "club.user",
     "pk": 60,
     "fields": {
-      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "password": "pbkdf2_sha256$1500000$YlDMqlmM5Nlohu0T2oV5UX$REbJ0AmMlNfjpAzwNGBqOBg5fj2DpsTbQu6nSRHb1JE=",
       "last_login": null,
       "is_superuser": false,
       "username": "andriy.lysenko",
@@ -1405,7 +1405,7 @@
     "model": "club.user",
     "pk": 61,
     "fields": {
-      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "password": "pbkdf2_sha256$1500000$YlDMqlmM5Nlohu0T2oV5UX$REbJ0AmMlNfjpAzwNGBqOBg5fj2DpsTbQu6nSRHb1JE=",
       "last_login": null,
       "is_superuser": false,
       "username": "olena.marchenko",
@@ -1430,7 +1430,7 @@
     "model": "club.user",
     "pk": 62,
     "fields": {
-      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "password": "pbkdf2_sha256$1500000$YlDMqlmM5Nlohu0T2oV5UX$REbJ0AmMlNfjpAzwNGBqOBg5fj2DpsTbQu6nSRHb1JE=",
       "last_login": null,
       "is_superuser": false,
       "username": "yulia.petrenko",
@@ -1454,7 +1454,7 @@
     "model": "club.user",
     "pk": 63,
     "fields": {
-      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "password": "pbkdf2_sha256$1500000$YlDMqlmM5Nlohu0T2oV5UX$REbJ0AmMlNfjpAzwNGBqOBg5fj2DpsTbQu6nSRHb1JE=",
       "last_login": null,
       "is_superuser": false,
       "username": "kateryna.vasylenko",
@@ -1479,7 +1479,7 @@
     "model": "club.user",
     "pk": 64,
     "fields": {
-      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "password": "pbkdf2_sha256$1500000$YlDMqlmM5Nlohu0T2oV5UX$REbJ0AmMlNfjpAzwNGBqOBg5fj2DpsTbQu6nSRHb1JE=",
       "last_login": null,
       "is_superuser": false,
       "username": "daryna.lysenko",
@@ -1503,7 +1503,7 @@
     "model": "club.user",
     "pk": 65,
     "fields": {
-      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "password": "pbkdf2_sha256$1500000$YlDMqlmM5Nlohu0T2oV5UX$REbJ0AmMlNfjpAzwNGBqOBg5fj2DpsTbQu6nSRHb1JE=",
       "last_login": null,
       "is_superuser": false,
       "username": "denys.klymenko",
@@ -1528,7 +1528,7 @@
     "model": "club.user",
     "pk": 66,
     "fields": {
-      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "password": "pbkdf2_sha256$1500000$YlDMqlmM5Nlohu0T2oV5UX$REbJ0AmMlNfjpAzwNGBqOBg5fj2DpsTbQu6nSRHb1JE=",
       "last_login": null,
       "is_superuser": false,
       "username": "diana.shevchenko",
@@ -1553,7 +1553,7 @@
     "model": "club.user",
     "pk": 67,
     "fields": {
-      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "password": "pbkdf2_sha256$1500000$YlDMqlmM5Nlohu0T2oV5UX$REbJ0AmMlNfjpAzwNGBqOBg5fj2DpsTbQu6nSRHb1JE=",
       "last_login": null,
       "is_superuser": false,
       "username": "bohdan.polishchuk",
@@ -1577,7 +1577,7 @@
     "model": "club.user",
     "pk": 68,
     "fields": {
-      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "password": "pbkdf2_sha256$1500000$YlDMqlmM5Nlohu0T2oV5UX$REbJ0AmMlNfjpAzwNGBqOBg5fj2DpsTbQu6nSRHb1JE=",
       "last_login": null,
       "is_superuser": false,
       "username": "ivan.klymenko",
@@ -1601,7 +1601,7 @@
     "model": "club.user",
     "pk": 69,
     "fields": {
-      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "password": "pbkdf2_sha256$1500000$YlDMqlmM5Nlohu0T2oV5UX$REbJ0AmMlNfjpAzwNGBqOBg5fj2DpsTbQu6nSRHb1JE=",
       "last_login": null,
       "is_superuser": false,
       "username": "oksana.shevchuk",
@@ -1626,7 +1626,7 @@
     "model": "club.user",
     "pk": 70,
     "fields": {
-      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "password": "pbkdf2_sha256$1500000$YlDMqlmM5Nlohu0T2oV5UX$REbJ0AmMlNfjpAzwNGBqOBg5fj2DpsTbQu6nSRHb1JE=",
       "last_login": null,
       "is_superuser": false,
       "username": "marta.kovalenko",
@@ -1650,7 +1650,7 @@
     "model": "club.user",
     "pk": 71,
     "fields": {
-      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "password": "pbkdf2_sha256$1500000$YlDMqlmM5Nlohu0T2oV5UX$REbJ0AmMlNfjpAzwNGBqOBg5fj2DpsTbQu6nSRHb1JE=",
       "last_login": null,
       "is_superuser": false,
       "username": "vlad.zinchenko",
@@ -1675,7 +1675,7 @@
     "model": "club.user",
     "pk": 72,
     "fields": {
-      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "password": "pbkdf2_sha256$1500000$YlDMqlmM5Nlohu0T2oV5UX$REbJ0AmMlNfjpAzwNGBqOBg5fj2DpsTbQu6nSRHb1JE=",
       "last_login": null,
       "is_superuser": false,
       "username": "danylo.moroz",
@@ -1699,7 +1699,7 @@
     "model": "club.user",
     "pk": 73,
     "fields": {
-      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "password": "pbkdf2_sha256$1500000$YlDMqlmM5Nlohu0T2oV5UX$REbJ0AmMlNfjpAzwNGBqOBg5fj2DpsTbQu6nSRHb1JE=",
       "last_login": null,
       "is_superuser": false,
       "username": "maksym.kovalenko",
@@ -1724,7 +1724,7 @@
     "model": "club.user",
     "pk": 74,
     "fields": {
-      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "password": "pbkdf2_sha256$1500000$YlDMqlmM5Nlohu0T2oV5UX$REbJ0AmMlNfjpAzwNGBqOBg5fj2DpsTbQu6nSRHb1JE=",
       "last_login": null,
       "is_superuser": false,
       "username": "diana.shevchenko2",
@@ -1749,7 +1749,7 @@
     "model": "club.user",
     "pk": 75,
     "fields": {
-      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "password": "pbkdf2_sha256$1500000$YlDMqlmM5Nlohu0T2oV5UX$REbJ0AmMlNfjpAzwNGBqOBg5fj2DpsTbQu6nSRHb1JE=",
       "last_login": null,
       "is_superuser": false,
       "username": "maria.vasylenko",
@@ -1773,7 +1773,7 @@
     "model": "club.user",
     "pk": 76,
     "fields": {
-      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "password": "pbkdf2_sha256$1500000$YlDMqlmM5Nlohu0T2oV5UX$REbJ0AmMlNfjpAzwNGBqOBg5fj2DpsTbQu6nSRHb1JE=",
       "last_login": null,
       "is_superuser": false,
       "username": "zoriana.kovalchuk",
@@ -1797,7 +1797,7 @@
     "model": "club.user",
     "pk": 77,
     "fields": {
-      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "password": "pbkdf2_sha256$1500000$YlDMqlmM5Nlohu0T2oV5UX$REbJ0AmMlNfjpAzwNGBqOBg5fj2DpsTbQu6nSRHb1JE=",
       "last_login": null,
       "is_superuser": false,
       "username": "halyna.zinchenko2",
@@ -1821,7 +1821,7 @@
     "model": "club.user",
     "pk": 78,
     "fields": {
-      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "password": "pbkdf2_sha256$1500000$YlDMqlmM5Nlohu0T2oV5UX$REbJ0AmMlNfjpAzwNGBqOBg5fj2DpsTbQu6nSRHb1JE=",
       "last_login": null,
       "is_superuser": false,
       "username": "marta.kovalchuk",
@@ -1846,7 +1846,7 @@
     "model": "club.user",
     "pk": 79,
     "fields": {
-      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "password": "pbkdf2_sha256$1500000$YlDMqlmM5Nlohu0T2oV5UX$REbJ0AmMlNfjpAzwNGBqOBg5fj2DpsTbQu6nSRHb1JE=",
       "last_login": null,
       "is_superuser": false,
       "username": "volodymyr.vasylenko",
@@ -1871,7 +1871,7 @@
     "model": "club.user",
     "pk": 80,
     "fields": {
-      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "password": "pbkdf2_sha256$1500000$YlDMqlmM5Nlohu0T2oV5UX$REbJ0AmMlNfjpAzwNGBqOBg5fj2DpsTbQu6nSRHb1JE=",
       "last_login": null,
       "is_superuser": false,
       "username": "oksana.petrenko",
@@ -1895,7 +1895,7 @@
     "model": "club.user",
     "pk": 81,
     "fields": {
-      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "password": "pbkdf2_sha256$1500000$YlDMqlmM5Nlohu0T2oV5UX$REbJ0AmMlNfjpAzwNGBqOBg5fj2DpsTbQu6nSRHb1JE=",
       "last_login": null,
       "is_superuser": false,
       "username": "yulia.marchenko",
@@ -1919,7 +1919,7 @@
     "model": "club.user",
     "pk": 82,
     "fields": {
-      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "password": "pbkdf2_sha256$1500000$YlDMqlmM5Nlohu0T2oV5UX$REbJ0AmMlNfjpAzwNGBqOBg5fj2DpsTbQu6nSRHb1JE=",
       "last_login": null,
       "is_superuser": false,
       "username": "marta.kovalchuk2",
@@ -1943,7 +1943,7 @@
     "model": "club.user",
     "pk": 83,
     "fields": {
-      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "password": "pbkdf2_sha256$1500000$YlDMqlmM5Nlohu0T2oV5UX$REbJ0AmMlNfjpAzwNGBqOBg5fj2DpsTbQu6nSRHb1JE=",
       "last_login": null,
       "is_superuser": false,
       "username": "anton.danylenko",
@@ -1968,7 +1968,7 @@
     "model": "club.user",
     "pk": 84,
     "fields": {
-      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "password": "pbkdf2_sha256$1500000$YlDMqlmM5Nlohu0T2oV5UX$REbJ0AmMlNfjpAzwNGBqOBg5fj2DpsTbQu6nSRHb1JE=",
       "last_login": null,
       "is_superuser": false,
       "username": "tetiana.rudenko",
@@ -1992,7 +1992,7 @@
     "model": "club.user",
     "pk": 85,
     "fields": {
-      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "password": "pbkdf2_sha256$1500000$YlDMqlmM5Nlohu0T2oV5UX$REbJ0AmMlNfjpAzwNGBqOBg5fj2DpsTbQu6nSRHb1JE=",
       "last_login": null,
       "is_superuser": false,
       "username": "vira.kovalenko",
@@ -2017,7 +2017,7 @@
     "model": "club.user",
     "pk": 86,
     "fields": {
-      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "password": "pbkdf2_sha256$1500000$YlDMqlmM5Nlohu0T2oV5UX$REbJ0AmMlNfjpAzwNGBqOBg5fj2DpsTbQu6nSRHb1JE=",
       "last_login": null,
       "is_superuser": false,
       "username": "yuriy.kovalenko2",
@@ -2041,7 +2041,7 @@
     "model": "club.user",
     "pk": 87,
     "fields": {
-      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "password": "pbkdf2_sha256$1500000$YlDMqlmM5Nlohu0T2oV5UX$REbJ0AmMlNfjpAzwNGBqOBg5fj2DpsTbQu6nSRHb1JE=",
       "last_login": null,
       "is_superuser": false,
       "username": "halyna.lysenko",
@@ -2066,7 +2066,7 @@
     "model": "club.user",
     "pk": 88,
     "fields": {
-      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "password": "pbkdf2_sha256$1500000$YlDMqlmM5Nlohu0T2oV5UX$REbJ0AmMlNfjpAzwNGBqOBg5fj2DpsTbQu6nSRHb1JE=",
       "last_login": null,
       "is_superuser": false,
       "username": "tetiana.kravchenko",
@@ -2091,7 +2091,7 @@
     "model": "club.user",
     "pk": 89,
     "fields": {
-      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "password": "pbkdf2_sha256$1500000$YlDMqlmM5Nlohu0T2oV5UX$REbJ0AmMlNfjpAzwNGBqOBg5fj2DpsTbQu6nSRHb1JE=",
       "last_login": null,
       "is_superuser": false,
       "username": "marta.bondar",
@@ -2115,7 +2115,7 @@
     "model": "club.user",
     "pk": 90,
     "fields": {
-      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "password": "pbkdf2_sha256$1500000$YlDMqlmM5Nlohu0T2oV5UX$REbJ0AmMlNfjpAzwNGBqOBg5fj2DpsTbQu6nSRHb1JE=",
       "last_login": null,
       "is_superuser": false,
       "username": "dmytro.vasylenko",
@@ -2139,7 +2139,7 @@
     "model": "club.user",
     "pk": 91,
     "fields": {
-      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "password": "pbkdf2_sha256$1500000$YlDMqlmM5Nlohu0T2oV5UX$REbJ0AmMlNfjpAzwNGBqOBg5fj2DpsTbQu6nSRHb1JE=",
       "last_login": null,
       "is_superuser": false,
       "username": "yaroslav.savchenko",
@@ -2163,7 +2163,7 @@
     "model": "club.user",
     "pk": 92,
     "fields": {
-      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "password": "pbkdf2_sha256$1500000$YlDMqlmM5Nlohu0T2oV5UX$REbJ0AmMlNfjpAzwNGBqOBg5fj2DpsTbQu6nSRHb1JE=",
       "last_login": null,
       "is_superuser": false,
       "username": "volodymyr.vasylenko2",
@@ -2187,7 +2187,7 @@
     "model": "club.user",
     "pk": 93,
     "fields": {
-      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "password": "pbkdf2_sha256$1500000$YlDMqlmM5Nlohu0T2oV5UX$REbJ0AmMlNfjpAzwNGBqOBg5fj2DpsTbQu6nSRHb1JE=",
       "last_login": null,
       "is_superuser": false,
       "username": "maria.boyko",
@@ -2212,7 +2212,7 @@
     "model": "club.user",
     "pk": 94,
     "fields": {
-      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "password": "pbkdf2_sha256$1500000$YlDMqlmM5Nlohu0T2oV5UX$REbJ0AmMlNfjpAzwNGBqOBg5fj2DpsTbQu6nSRHb1JE=",
       "last_login": null,
       "is_superuser": false,
       "username": "yaroslav.tkachenko",
@@ -2236,7 +2236,7 @@
     "model": "club.user",
     "pk": 95,
     "fields": {
-      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "password": "pbkdf2_sha256$1500000$YlDMqlmM5Nlohu0T2oV5UX$REbJ0AmMlNfjpAzwNGBqOBg5fj2DpsTbQu6nSRHb1JE=",
       "last_login": null,
       "is_superuser": false,
       "username": "anton.bondar",
@@ -2261,7 +2261,7 @@
     "model": "club.user",
     "pk": 96,
     "fields": {
-      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "password": "pbkdf2_sha256$1500000$YlDMqlmM5Nlohu0T2oV5UX$REbJ0AmMlNfjpAzwNGBqOBg5fj2DpsTbQu6nSRHb1JE=",
       "last_login": null,
       "is_superuser": false,
       "username": "andriy.rudenko",
@@ -2285,7 +2285,7 @@
     "model": "club.user",
     "pk": 97,
     "fields": {
-      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "password": "pbkdf2_sha256$1500000$YlDMqlmM5Nlohu0T2oV5UX$REbJ0AmMlNfjpAzwNGBqOBg5fj2DpsTbQu6nSRHb1JE=",
       "last_login": null,
       "is_superuser": false,
       "username": "vlad.danylenko",
@@ -2309,7 +2309,7 @@
     "model": "club.user",
     "pk": 98,
     "fields": {
-      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "password": "pbkdf2_sha256$1500000$YlDMqlmM5Nlohu0T2oV5UX$REbJ0AmMlNfjpAzwNGBqOBg5fj2DpsTbQu6nSRHb1JE=",
       "last_login": null,
       "is_superuser": false,
       "username": "yuriy.vasylenko",
@@ -2334,7 +2334,7 @@
     "model": "club.user",
     "pk": 99,
     "fields": {
-      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "password": "pbkdf2_sha256$1500000$YlDMqlmM5Nlohu0T2oV5UX$REbJ0AmMlNfjpAzwNGBqOBg5fj2DpsTbQu6nSRHb1JE=",
       "last_login": null,
       "is_superuser": false,
       "username": "oleh.kravchenko",
@@ -2358,7 +2358,7 @@
     "model": "club.user",
     "pk": 100,
     "fields": {
-      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "password": "pbkdf2_sha256$1500000$YlDMqlmM5Nlohu0T2oV5UX$REbJ0AmMlNfjpAzwNGBqOBg5fj2DpsTbQu6nSRHb1JE=",
       "last_login": null,
       "is_superuser": false,
       "username": "roman.moroz",
@@ -2382,7 +2382,7 @@
     "model": "club.user",
     "pk": 101,
     "fields": {
-      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "password": "pbkdf2_sha256$1500000$YlDMqlmM5Nlohu0T2oV5UX$REbJ0AmMlNfjpAzwNGBqOBg5fj2DpsTbQu6nSRHb1JE=",
       "last_login": null,
       "is_superuser": false,
       "username": "daryna.moroz",
@@ -2406,7 +2406,7 @@
     "model": "club.user",
     "pk": 102,
     "fields": {
-      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "password": "pbkdf2_sha256$1500000$YlDMqlmM5Nlohu0T2oV5UX$REbJ0AmMlNfjpAzwNGBqOBg5fj2DpsTbQu6nSRHb1JE=",
       "last_login": null,
       "is_superuser": false,
       "username": "bohdan.melnyk",
@@ -2431,7 +2431,7 @@
     "model": "club.user",
     "pk": 103,
     "fields": {
-      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "password": "pbkdf2_sha256$1500000$YlDMqlmM5Nlohu0T2oV5UX$REbJ0AmMlNfjpAzwNGBqOBg5fj2DpsTbQu6nSRHb1JE=",
       "last_login": null,
       "is_superuser": false,
       "username": "mykyta.kovalchuk",
@@ -2455,7 +2455,7 @@
     "model": "club.user",
     "pk": 104,
     "fields": {
-      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "password": "pbkdf2_sha256$1500000$YlDMqlmM5Nlohu0T2oV5UX$REbJ0AmMlNfjpAzwNGBqOBg5fj2DpsTbQu6nSRHb1JE=",
       "last_login": null,
       "is_superuser": false,
       "username": "yulia.boyko",
@@ -2479,7 +2479,7 @@
     "model": "club.user",
     "pk": 105,
     "fields": {
-      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "password": "pbkdf2_sha256$1500000$YlDMqlmM5Nlohu0T2oV5UX$REbJ0AmMlNfjpAzwNGBqOBg5fj2DpsTbQu6nSRHb1JE=",
       "last_login": null,
       "is_superuser": false,
       "username": "pavlo.klymenko",
@@ -2503,7 +2503,7 @@
     "model": "club.user",
     "pk": 106,
     "fields": {
-      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "password": "pbkdf2_sha256$1500000$YlDMqlmM5Nlohu0T2oV5UX$REbJ0AmMlNfjpAzwNGBqOBg5fj2DpsTbQu6nSRHb1JE=",
       "last_login": null,
       "is_superuser": false,
       "username": "yulia.tkachenko",
@@ -2527,7 +2527,7 @@
     "model": "club.user",
     "pk": 107,
     "fields": {
-      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "password": "pbkdf2_sha256$1500000$YlDMqlmM5Nlohu0T2oV5UX$REbJ0AmMlNfjpAzwNGBqOBg5fj2DpsTbQu6nSRHb1JE=",
       "last_login": null,
       "is_superuser": false,
       "username": "taras.shevchenko",
@@ -2552,7 +2552,7 @@
     "model": "club.user",
     "pk": 108,
     "fields": {
-      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "password": "pbkdf2_sha256$1500000$YlDMqlmM5Nlohu0T2oV5UX$REbJ0AmMlNfjpAzwNGBqOBg5fj2DpsTbQu6nSRHb1JE=",
       "last_login": null,
       "is_superuser": false,
       "username": "bohdan.boyko",
@@ -2576,7 +2576,7 @@
     "model": "club.user",
     "pk": 109,
     "fields": {
-      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "password": "pbkdf2_sha256$1500000$YlDMqlmM5Nlohu0T2oV5UX$REbJ0AmMlNfjpAzwNGBqOBg5fj2DpsTbQu6nSRHb1JE=",
       "last_login": null,
       "is_superuser": false,
       "username": "maksym.kravchenko",
@@ -2600,7 +2600,7 @@
     "model": "club.user",
     "pk": 110,
     "fields": {
-      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "password": "pbkdf2_sha256$1500000$YlDMqlmM5Nlohu0T2oV5UX$REbJ0AmMlNfjpAzwNGBqOBg5fj2DpsTbQu6nSRHb1JE=",
       "last_login": null,
       "is_superuser": false,
       "username": "maksym.pavlenko",
@@ -2625,7 +2625,7 @@
     "model": "club.user",
     "pk": 111,
     "fields": {
-      "password": "pbkdf2_sha256$1500000$4pf8bIqM1eJpMxc4VVnUTl$EYa2ar/bvy4YvVfHc7EhCawrYKvfmwcE1RewrpmFNo0=",
+      "password": "pbkdf2_sha256$1500000$YlDMqlmM5Nlohu0T2oV5UX$REbJ0AmMlNfjpAzwNGBqOBg5fj2DpsTbQu6nSRHb1JE=",
       "last_login": null,
       "is_superuser": false,
       "username": "vira.kovalchuk",

@@ -37,8 +37,24 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 # Install dependencies
 pip install -r requirements.txt
 
-# Run the application
-python manage.py runserver
+# Apply migrations
+python manage.py migrate
 
 # To load data from fixture
 python manage.py loaddata club_data.json
+
+# Run the application
+python manage.py runserver
+```
+
+### Test accounts
+
+After loading `club_data.json` you can log in with:
+
+| Role    | Username             | Password         |
+|---------|----------------------|------------------|
+| Coach   | `olena.shevchenko`   | `SportClub2026!` |
+| Athlete | `yaroslav.kovalchuk` | `SportClub2026!` |
+
+All users from the fixture share the same password.
+Coaches can only be created or promoted by an administrator in the Django admin (`/admin/`).

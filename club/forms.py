@@ -30,17 +30,20 @@ class UserForm(UserCreationForm):
         }
 
 
+class SignUpForm(UserForm):
+    class Meta(UserForm.Meta):
+        fields = tuple(f for f in UserForm.Meta.fields if f != "role")
+
+
 class UserFormUpdate(forms.ModelForm):
     class Meta:
         model = User
         fields = (
             "username",
             "first_name",
-            "password",
             "last_name",
             "email",
             "birth_date",
-            "role",
             "weight",
             "coaches",
         )

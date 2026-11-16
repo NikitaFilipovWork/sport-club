@@ -80,8 +80,8 @@ class TrainingSession(models.Model):
         ordering = ["starts_at"]
 
     def clean(self):
-        if self.starts_at > self.ends_at:
-            raise ValueError("Training can not end before it begins!")
+        if self.starts_at and self.ends_at and self.starts_at > self.ends_at:
+            raise ValidationError("Training can not end before it begins!")
         if self.coach_id and not self.coach.is_coach:
             raise ValidationError("Only a user with the 'coach' role can conduct a training session.")
 
